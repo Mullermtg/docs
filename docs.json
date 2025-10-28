@@ -3,7 +3,8 @@
   "theme": "almond",
   "name": "Adtool",
   "fonts": {
-  "family": "Nunito"
+  "family": "Nunito",
+  "headingWeight": 700
   },
   "colors": {
     "primary": "#F64900",
