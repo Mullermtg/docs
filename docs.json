@@ -74,13 +74,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://adtool.io",
           "icon": "newspaper"
         }
       ]
@@ -99,7 +94,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Go back to Adtool.io",
+      "icon": "arrow-up-right",
+      "label": "Back to Adtool.io",
       "href": "https://adtool.io/launch"
     }
   }
