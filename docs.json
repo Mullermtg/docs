@@ -18,6 +18,7 @@
         "groups": [
           {
             "group": "Getting started",
+            "icon": "circle-play",
             "pages": [
               "Getting-Started/full-walkthrough",
               "Getting-Started/launching-your-first-batch"
@@ -25,6 +26,7 @@
           },
           {
             "group": "Launch",
+            "icon": "rocket",
             "pages": [
               "Launch/launching-single-image-or-video",
               "Launch/launching-flexible-ads",
@@ -39,6 +41,7 @@
           },
           {
             "group": "Creatives",
+            "icon": "image",
             "pages": [
               "Creatives/upload-creatives",
               "Creatives/set-custom-thumbnails",
@@ -47,6 +50,7 @@
           },
           {
             "group": "Settings",
+            "icon": "settings",
             "pages": [
               "Settings/creative-enhancements",
               "Settings/UTM-parameters",
@@ -56,6 +60,7 @@
           },
           {
             "group": "Troubleshoot",
+            "icon": "bug",
             "pages": [
               "Troubleshoot/cant-see-my-FB-or-IG-page",
               "Troubleshoot/cant-see-ads"
