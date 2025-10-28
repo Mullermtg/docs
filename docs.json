@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/adtool-favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -31,15 +31,15 @@
               "Launch/dublicate-ad-sets",
               "Launch/customize-ads-individually",
               "Launch/bulk-edit-ad-names",
-              "Launch/work-effectively-with-relaunch-function.mdx"
+              "Launch/work-effectively-with-relaunch-function"
             ]
           },
           {
             "group": "Creatives",
             "pages": [
               "Creatives/upload-creatives",
-              "Creatives/set-custom-thumbnails.mdx",
-              "Creatives/tagging-your-creatives.mdx"
+              "Creatives/set-custom-thumbnails",
+              "Creatives/tagging-your-creatives"
             ]
           },
           {
@@ -54,16 +54,8 @@
           {
             "group": "Troubleshoot",
             "pages": [
-              "Troubleshoot/cant-see-my-FB-or-IG-page.mdx",
+              "Troubleshoot/cant-see-my-FB-or-IG-page",
               "Troubleshoot/cant-see-ads"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
             ]
           }
         ]
@@ -107,8 +99,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/adtool-light.svg",
+    "dark": "/logo/adtool-dark.svg"
   },
   "navbar": {
     "links": [
@@ -119,27 +111,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "label": "Go back to Adtool.io",
+      "href": "https://adtool.io/launch"
     }
   }
 }
