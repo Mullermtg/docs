@@ -51,7 +51,7 @@
           },
           {
             "group": "Settings",
-            "icon": "settings",
+            "icon": "cog",
             "pages": [
               "Settings/creative-enhancements",
               "Settings/UTM-parameters",
