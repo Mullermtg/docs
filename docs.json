@@ -10,7 +10,7 @@
     "light": "#e6e6e6",
     "dark": "#171717"
   },
-  "favicon": "/adtool-favicon.svg",
+  "favicon": "/logo/adtool-favicon.svg",
   "navigation": {
     "tabs": [
       {
