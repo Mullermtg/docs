@@ -29,6 +29,15 @@
             ]
           },
           {
+            "group": "Settings",
+            "pages": [
+              "Settings/creative-enhancements",
+              "Settings/UTM-parameters",
+              "Settings/manage-connections",
+              "Settings/naming-convention"
+            ]
+          },
+          {
             "group": "Writing content",
             "pages": [
               "essentials/markdown",
@@ -67,7 +76,9 @@
           }
         ]
       }
+  
     ],
+    
     "global": {
       "anchors": [
         {
