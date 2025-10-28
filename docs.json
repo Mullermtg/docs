@@ -11,21 +11,35 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Help Center",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "Getting-Started/full-walkthrough",
+              "Getting-Started/launching-your-first-batch"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Launch",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "Launch/launching-single-image-or-video",
+              "Launch/launching-flexible-ads",
+              "Launch/launching-carousel-ads",
+              "Launch/grouping-creatives-for-various-placements",
+              "Launch/dublicate-campaigns",
+              "Launch/dublicate-ad-sets",
+              "Launch/customize-ads-individually",
+              "Launch/bulk-edit-ad-names",
+              "Launch/work-effectively-with-relaunch-function.mdx"
+            ]
+          },
+          {
+            "group": "Creatives",
+            "pages": [
+              "Creatives/upload-creatives",
+              "Creatives/set-custom-thumbnails.mdx",
+              "Creatives/tagging-your-creatives.mdx"
             ]
           },
           {
@@ -38,12 +52,10 @@
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Troubleshoot",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "Troubleshoot/cant-see-my-FB-or-IG-page.mdx",
+              "Troubleshoot/cant-see-ads"
             ]
           },
           {
