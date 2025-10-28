@@ -1,14 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Mint Starter Kit",
+  "name": "Adtool",
   "fonts": {
   "family": "Nunito"
   },
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FEEFDB",
+    "light": "#e6e6e6",
+    "dark": "#171717"
   },
   "favicon": "/adtool-favicon.svg",
   "navigation": {
