@@ -16,17 +16,12 @@
     "tabs": [
       {
         "tab": "Help Center",
-
-        "pages": [
-          "Getting-Started/full-walkthrough"
-        ],
         "groups": [
           {
             "group": "Getting started",
             "icon": "circle-play",
             "pages": [
-              "Getting-Started/full-walkthrough",
-              "Getting-Started/revisit-onboarding"
+              "Getting-Started/full-walkthrough"            
             ]
           },
           {
