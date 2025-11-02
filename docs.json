@@ -16,6 +16,10 @@
     "tabs": [
       {
         "tab": "Help Center",
+
+        "pages": [
+          "Getting-Started/full-walkthrough"
+        ],
         "groups": [
           {
             "group": "Getting started",
