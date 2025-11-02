@@ -75,9 +75,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Blog",
-          "href": "https://adtool.io",
-          "icon": "newspaper"
+          "anchor": "Getting started",
+          "href": "https://help.adtool.io/Getting-Started/full-walkthrough",
+          "icon": "circle-play"
         }
       ]
     }
