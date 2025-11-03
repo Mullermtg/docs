@@ -69,17 +69,7 @@
           }
         ]
       }
-    ],
-    
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Getting started",
-          "href": "https://help.adtool.io/Getting-Started/full-walkthrough",
-          "icon": "circle-play"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/adtool-light.svg",
