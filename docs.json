@@ -78,8 +78,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Get support from livechat",
+        "href": "https://adtool.io/?chat=open"
       }
     ],
     "primary": {
