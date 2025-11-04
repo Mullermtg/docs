@@ -26,7 +26,7 @@
           },
           {
             "group": "Launch",
-            "icon": "/Assets/rocket.svg",
+            "icon": "rocket",
             "pages": [
               "Launch/launching-single-image-or-video",
               "Launch/launching-flexible-ads",
