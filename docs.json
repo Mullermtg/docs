@@ -29,7 +29,8 @@
             "icon": "rss",
             "pages": [
               "Launch/save-as-draft",
-              "Launch/schedule-ads"
+              "Launch/schedule-ads",
+              "Launch/preview-link"
             ]
           },
           {
@@ -47,7 +48,8 @@
               "Launch/work-effectively-with-relaunch-function",
               "Launch/adjust-additional-settings",
               "Launch/save-as-draft",
-              "Launch/schedule-ads"
+              "Launch/schedule-ads",
+              "Launch/preview-link"
             ]
           },
           {
