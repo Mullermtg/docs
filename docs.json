@@ -26,10 +26,10 @@
           },
           {
             "group": "What's new",
-            "icon": "newspaper",
+            "icon": "rss",
             "pages": [
-              "Launch/schedule-ads",
-              "Launch/save-as-draft"
+              "Launch/save-as-draft",
+              "Launch/schedule-ads"
             ]
           },
           {
@@ -45,7 +45,9 @@
               "Launch/customize-ads-individually",
               "Launch/bulk-edit-ad-names",
               "Launch/work-effectively-with-relaunch-function",
-              "Launch/adjust-additional-settings"
+              "Launch/adjust-additional-settings",
+              "Launch/save-as-draft",
+              "Launch/schedule-ads"
             ]
           },
           {
