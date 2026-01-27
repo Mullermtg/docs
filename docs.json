@@ -30,7 +30,8 @@
             "pages": [
               "Launch/save-as-draft",
               "Launch/schedule-ads",
-              "Launch/preview-link"
+              "Launch/preview-link",
+              "Launch/partnership-ads"
             ]
           },
           {
@@ -49,7 +50,8 @@
               "Launch/adjust-additional-settings",
               "Launch/save-as-draft",
               "Launch/schedule-ads",
-              "Launch/preview-link"
+              "Launch/preview-link",
+              "Launch/partnership-ads"
             ]
           },
           {
