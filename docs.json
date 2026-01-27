@@ -21,7 +21,15 @@
             "group": "Getting started",
             "icon": "circle-play",
             "pages": [
-              "Getting-Started/full-walkthrough"            
+              "Getting-Started/full-walkthrough"
+            ]
+          },
+          {
+            "group": "What's new",
+            "icon": "newspaper",
+            "pages": [
+              "Launch/schedule-ads",
+              "Launch/save-as-draft"
             ]
           },
           {
@@ -37,9 +45,7 @@
               "Launch/customize-ads-individually",
               "Launch/bulk-edit-ad-names",
               "Launch/work-effectively-with-relaunch-function",
-              "Launch/adjust-additional-settings",
-              "Launch/schedule-ads",
-              "Launch/save-as-draft"
+              "Launch/adjust-additional-settings"
             ]
           },
           {
