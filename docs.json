@@ -28,11 +28,10 @@
             "group": "What's new",
             "icon": "rss",
             "pages": [
+              "Launch/multi-language-ads",
               "Launch/save-as-draft",
-              "Launch/schedule-ads",
               "Launch/preview-link",
               "Launch/partnership-ads",
-              "Launch/grouping-with-3-placement-groups"
             ]
           },
           {
@@ -52,7 +51,8 @@
               "Launch/adjust-additional-settings",
               "Launch/save-as-draft",
               "Launch/schedule-ads",
-              "Launch/preview-link"
+              "Launch/preview-link",
+              "Launch/grouping-with-3-placement-groups"              
             ]
           },
           {
@@ -83,6 +83,9 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Changelog"
       }
     ]
   },
