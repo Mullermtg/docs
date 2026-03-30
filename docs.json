@@ -42,7 +42,8 @@
               "Launch/launching-flexible-ads",
               "Launch/launching-carousel-ads",
               "Launch/partnership-ads",
-              "/Launch/grouping-creatives",
+              "Launch/grouping-creatives",
+              "Launch/grouping-with-3-placement-groups",    
               "Launch/dublicate-campaigns",
               "Launch/dublicate-ad-sets",
               "Launch/customize-ads-individually",
@@ -51,8 +52,7 @@
               "Launch/adjust-additional-settings",
               "Launch/save-as-draft",
               "Launch/schedule-ads",
-              "Launch/preview-link",
-              "Launch/grouping-with-3-placement-groups"              
+              "Launch/preview-link"          
             ]
           },
           {
