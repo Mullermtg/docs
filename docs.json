@@ -80,7 +80,8 @@
             "icon": "bug",
             "pages": [
               "Troubleshoot/cant-see-my-FB-or-IG-page",
-              "Troubleshoot/cant-see-ads"
+              "Troubleshoot/cant-see-ads",
+              "Troubleshoot/reconnect-meta"
             ]
           }
         ]
