@@ -25,16 +25,6 @@
             ]
           },
           {
-            "group": "What's new",
-            "icon": "rss",
-            "pages": [
-              "Launch/multi-language-ads",
-              "Launch/save-as-draft",
-              "Launch/preview-link",
-              "Launch/partnership-ads"
-            ]
-          },
-          {
             "group": "Launch",
             "icon": "rocket",
             "pages": [
