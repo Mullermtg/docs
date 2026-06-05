@@ -1,0 +1,156 @@
+---
+description: "Learn how Adtool automatically groups creatives for different placements."
+sidebarTitle: "Auto-grouping guide"
+title: "How auto-grouping works"
+---
+
+Auto-grouping helps you group creatives that belong to the same ad, but are made for different placements.
+
+For example, these files can be grouped together because the ad name is the same and each file is made for a different placement:
+
+```text
+Summer Sale 1x1.jpg
+Summer Sale 9x16.jpg
+Summer Sale 16x9.jpg
+```
+
+## What auto-grouping checks
+
+Adtool checks four things before grouping creatives:
+
+1. The creative names match.
+2. The placement sizes are different.
+3. The files use the same file type.
+4. The placement size is supported.
+
+If Adtool is unsure whether creatives belong together, they will not be grouped automatically.
+
+## Supported placement tags
+
+Your file name should include a placement tag, such as `1x1`, `9x16`, or `16x9`. Adtool uses this tag to understand which placement the creative belongs to.
+
+| Placement | Accepted tags |
+| --- | --- |
+| Square | `1x1`, `1:1`, `1_1`, `1-1`, `1.1`, `(11)`, `1080x1080`, `1200x1200`, any clear square pixel size like `1440x1440`, `square`, `feed`, `post`, `ig` |
+| Feed portrait | `4x5`, `4:5`, `4_5`, `4-5`, `4.5`, `(45)`, `1080x1350`, any clear 4:5 pixel size |
+| Story / Reel | `9x16`, `9:16`, `9_16`, `9-16`, `9.16`, `(916)`, `1080x1920`, any clear 9:16 pixel size like `1440x2560`, `story`, `stories`, `reel`, `reels`, `vertical` |
+| Horizontal | `16x9`, `16:9`, `16_9`, `16-9`, `16.9`, `(169)`, `1920x1080`, any clear 16:9 pixel size, `horizontal`, `landscape`, `wide` |
+
+Pixel sizes can use `x`, `X`, or `×`.
+
+<Expandable title="Example">
+  ```text
+  1440x2560
+  1440X2560
+  1440×2560
+  ```
+</Expandable>
+
+## How placement tags should be written
+
+The placement tag must stand on its own in the file name.
+
+It can be separated with:
+
+- A space
+- An underscore
+- A hyphen
+- Brackets
+
+<Expandable title="Show example">
+  ```text
+  Summer Sale 9x16.jpg
+  Summer Sale_9x16.jpg
+  Summer Sale-9x16.jpg
+  Summer Sale (916).jpg
+  ```
+</Expandable>
+
+The tag should not be hidden inside another word or number.
+
+For example, `campaign1.1test.jpg` will not be treated as a square creative, because the `1.1` tag is part of a longer word.
+
+## How names are matched
+
+When Adtool checks whether creatives belong together, it first removes the placement tag from the file name. Then it compares what is left.
+
+| File name | Name Adtool compares |
+| --- | --- |
+| `PA26-9.16-Benilda.jpg` | `pa26_benilda` |
+| `PA26-1.1-Benilda.jpg` | `pa26_benilda` |
+
+Because the remaining name is the same, these creatives can be grouped together.
+
+## Examples that work
+
+These file names can be used for auto-grouping:
+
+```text
+Summer Sale 1x1.jpg
+Summer Sale 9x16.jpg
+Summer Sale 16x9.jpg
+```
+
+```text
+Summer Sale_1x1.mp4
+Summer Sale_9x16.mp4
+```
+
+```text
+Summer Sale-horizontal.png
+Summer Sale-square.png
+```
+
+```text
+Summer Sale (916).jpg
+Summer Sale (11).jpg
+```
+
+```text
+PA26-1.1-Benilda.jpg
+PA26-9.16-Benilda.jpg
+```
+
+## Examples that do not work
+
+These file names will not be grouped through normal placement tag matching:
+
+| File name | Why it does not work |
+| --- | --- |
+| `campaign1.1test.jpg` | The placement tag is hidden inside another word. |
+| `case-9.16test.jpg` | The placement tag is not separated from the rest of the name. |
+| `DSCO1945.jpg` | There is no placement tag. |
+| `creative-1024x768.jpg` | The size is not a supported placement. |
+| `Summer Sale.jpg` | There is no placement tag. |
+
+## Backup rule
+
+If the file names are exactly the same, Adtool can still group the creatives by checking the actual creative dimensions.
+
+For example:
+
+| File name | Actual size |
+| --- | --- |
+| `Summer Sale.jpg` | 1:1 |
+| `Summer Sale.jpg` | 9:16 |
+
+These can be grouped because the full file name is the same and the actual sizes are different supported placements.
+
+Even though the name looks similar, the full file names are different because the file types are different.
+
+## When creatives are not grouped
+
+Adtool will not auto-group creatives when:
+
+- The creative sizes are the same.
+- The files use different file types.
+- The actual size is not supported.
+- The placement tag is missing.
+- The placement tag is hidden inside another word.
+- Adtool is unsure which files belong together.
+
+## Group size
+
+An auto-group can contain 2 or 3 creatives.
+
+It cannot contain more than 3 creatives.

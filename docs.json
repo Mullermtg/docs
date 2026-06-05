@@ -62,18 +62,17 @@
             "pages": [
               "Creatives/upload-creatives",
               "Creatives/set-custom-thumbnails",
-              "Creatives/tagging-your-creatives",
-              "Creaties/auto-grouping-guide"
+              "Creatives/tagging-your-creatives"
             ]
           },
           {
             "group": "Settings",
             "icon": "cog",
             "pages": [
-              "Settings/creative-enhancements",
-              "Settings/UTM-parameters",
-              "Settings/manage-connections",
-              "Settings/naming-convention"
+              "settings/creative-enhancements",
+              "settings/UTM-parameters",
+              "settings/manage-connections",
+              "settings/naming-convention"
             ]
           },
           {
