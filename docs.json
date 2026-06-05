@@ -60,9 +60,7 @@
             "group": "Creatives",
             "icon": "image",
             "pages": [
-              "creatives/upload-creatives",
               "creatives/set-custom-thumbnails",
-              "creatives/tagging-your-creatives",
               "creatives/auto-grouping-guide"
             ]
           },
