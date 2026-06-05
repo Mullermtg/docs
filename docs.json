@@ -40,11 +40,11 @@
             "pages": [
               "Launch/launching-single-image-or-video",
               "Launch/launching-flexible-ads",
-              "Launch/multi-language-ads",
+              "Launch/multi-language-ads",              
               "Launch/launching-carousel-ads",
               "Launch/partnership-ads",
               "Launch/grouping-creatives",
-              "Launch/grouping-with-3-placement-groups",
+              "Launch/grouping-with-3-placement-groups",    
               "Launch/dublicate-campaigns",
               "Launch/dublicate-ad-sets",
               "Launch/customize-ads-individually",
@@ -53,15 +53,16 @@
               "Launch/adjust-additional-settings",
               "Launch/save-as-draft",
               "Launch/schedule-ads",
-              "Launch/preview-link"
+              "Launch/preview-link"          
             ]
           },
           {
             "group": "Creatives",
             "icon": "image",
             "pages": [
+              "Creatives/upload-creatives",
               "Creatives/set-custom-thumbnails",
-              "Creatives/auto-grouping-guide"
+              "Creatives/tagging-your-creatives"
             ]
           },
           {
