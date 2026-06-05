@@ -28,41 +28,42 @@
             "group": "What's new",
             "icon": "rss",
             "pages": [
-              "Launch/multi-language-ads",
-              "Launch/save-as-draft",
-              "Launch/preview-link",
-              "Launch/partnership-ads"
+              "launch/multi-language-ads",
+              "launch/save-as-draft",
+              "launch/preview-link",
+              "launch/partnership-ads"
             ]
           },
           {
             "group": "Launch",
             "icon": "rocket",
             "pages": [
-              "Launch/launching-single-image-or-video",
-              "Launch/launching-flexible-ads",
-              "Launch/multi-language-ads",              
-              "Launch/launching-carousel-ads",
-              "Launch/partnership-ads",
-              "Launch/grouping-creatives",
-              "Launch/grouping-with-3-placement-groups",    
-              "Launch/dublicate-campaigns",
-              "Launch/dublicate-ad-sets",
-              "Launch/customize-ads-individually",
-              "Launch/bulk-edit-ad-names",
-              "Launch/work-effectively-with-relaunch-function",
-              "Launch/adjust-additional-settings",
-              "Launch/save-as-draft",
-              "Launch/schedule-ads",
-              "Launch/preview-link"          
+              "launch/launching-single-image-or-video",
+              "launch/launching-flexible-ads",
+              "launch/multi-language-ads",
+              "launch/launching-carousel-ads",
+              "launch/partnership-ads",
+              "launch/grouping-creatives",
+              "launch/grouping-with-3-placement-groups",
+              "launch/dublicate-campaigns",
+              "launch/dublicate-ad-sets",
+              "launch/customize-ads-individually",
+              "launch/bulk-edit-ad-names",
+              "launch/work-effectively-with-relaunch-function",
+              "launch/adjust-additional-settings",
+              "launch/save-as-draft",
+              "launch/schedule-ads",
+              "launch/preview-link"
             ]
           },
           {
             "group": "Creatives",
             "icon": "image",
             "pages": [
-              "Creatives/upload-creatives",
-              "Creatives/set-custom-thumbnails",
-              "Creatives/tagging-your-creatives"
+              "creatives/upload-creatives",
+              "creatives/set-custom-thumbnails",
+              "creatives/tagging-your-creatives",
+              "creatives/auto-grouping-guide"
             ]
           },
           {
@@ -79,9 +80,9 @@
             "group": "Troubleshoot",
             "icon": "bug",
             "pages": [
-              "Troubleshoot/cant-see-my-FB-or-IG-page",
-              "Troubleshoot/cant-see-ads",
-              "Troubleshoot/reconnect-meta"
+              "troubleshoot/cant-see-my-FB-or-IG-page",
+              "troubleshoot/cant-see-ads",
+              "troubleshoot/reconnect-meta"
             ]
           }
         ]
