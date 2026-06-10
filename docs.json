@@ -28,10 +28,7 @@
             "group": "Launch",
             "icon": "rocket",
             "pages": [
-              "Launch/launching-single-image-or-video",
-              "Launch/launching-flexible-ads",
-              "Launch/multi-language-ads",              
-              "Launch/launching-carousel-ads",
+              "Launch/multi-language-ads",
               "Launch/partnership-ads",
               "Launch/grouping-creatives",
               "Launch/grouping-with-3-placement-groups",    
@@ -44,6 +41,15 @@
               "Launch/save-as-draft",
               "Launch/schedule-ads",
               "Launch/preview-link"          
+            ]
+          },
+          {
+            "group": "Ad types",
+            "icon": "badge-ad",
+            "pages": [
+              "Launch/launching-flexible-ads",
+              "Launch/launching-carousel-ads",
+              "Launch/launching-single-image-or-video"
             ]
           },
           {
