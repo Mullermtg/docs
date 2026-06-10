@@ -2,10 +2,6 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
   "name": "Adtool",
-  "fonts": {
-  "family": "Nunito",
-  "headingWeight": 700
-  },
   "colors": {
     "primary": "#F64900",
     "light": "#e6e6e6",
@@ -84,7 +80,10 @@
         ]
       },
       {
-        "tab": "Changelog"
+        "tab": "Changelog",
+        "pages": [
+          "example-page"
+        ]
       }
     ]
   },
@@ -105,5 +104,15 @@
       "label": "Back to Adtool.io",
       "href": "https://adtool.io/launch"
     }
-  }
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "interaction": {
+    "drilldown": false
+  },
+  "description": "Guides for using Adtool to upload creatives, organize content, launch Meta ads, manage settings, and troubleshoot common issues."
 }
