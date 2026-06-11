@@ -87,14 +87,13 @@
               "Troubleshoot/cant-see-ads",
               "Troubleshoot/reconnect-meta"
             ]
-          },
-          {
-            "group": "Changelog",
-            "icon": "list",
-            "pages": [
-              "changelog"
-            ]
           }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "pages": [
+          "updates"
         ]
       }
     ]
