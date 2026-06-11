@@ -94,7 +94,8 @@
         "tab": "Changelog",
         "pages": [
           "updates"
-        ]
+        ],
+        "hidden": true
       }
     ]
   },
