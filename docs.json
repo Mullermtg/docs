@@ -24,11 +24,11 @@
             "group": "Ad types",
             "icon": "arrow-alt-circle-right",
             "pages": [
-              "Launch/launching-flexible-ads",
-              "Launch/launching-carousel-ads",
               "Launch/launching-single-image-or-video",
+              "Launch/launching-carousel-ads",
+              "Launch/partnership-ads",
               "Launch/multi-language-ads",
-              "Launch/partnership-ads"
+              "Launch/launching-flexible-ads"
             ]
           },
           {
