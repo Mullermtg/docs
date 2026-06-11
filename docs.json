@@ -21,6 +21,17 @@
             ]
           },
           {
+            "group": "Ad types",
+            "icon": "arrow-alt-circle-right",
+            "pages": [
+              "Launch/launching-flexible-ads",
+              "Launch/launching-carousel-ads",
+              "Launch/launching-single-image-or-video",
+              "Launch/multi-language-ads",
+              "Launch/partnership-ads"
+            ]
+          },
+          {
             "group": "Launch",
             "icon": "rocket",
             "pages": [
@@ -35,17 +46,6 @@
               "Launch/save-as-draft",
               "Launch/schedule-ads",
               "Launch/preview-link"          
-            ]
-          },
-          {
-            "group": "Ad types",
-            "icon": "badge-ad",
-            "pages": [
-              "Launch/launching-flexible-ads",
-              "Launch/launching-carousel-ads",
-              "Launch/launching-single-image-or-video",
-              "Launch/multi-language-ads",
-              "Launch/partnership-ads"
             ]
           },
           {
@@ -69,19 +69,12 @@
             ]
           },
           {
-            "group": "Support",
+            "group": "Troubleshoot",
             "icon": "bug",
             "pages": [
-              {
-                "group": "Troubleshoot",
-                "expanded": false,
-                "pages": [
-                  "Troubleshoot/cant-see-my-FB-or-IG-page",
-                  "Troubleshoot/cant-see-ads",
-                  "Troubleshoot/reconnect-meta"
-                ],
-                "icon": "bug"
-              }
+              "Troubleshoot/cant-see-my-FB-or-IG-page",
+              "Troubleshoot/cant-see-ads",
+              "Troubleshoot/reconnect-meta"
             ]
           }
         ]
