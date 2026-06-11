@@ -92,11 +92,7 @@
       },
       {
         "tab": "Changelog",
-        "pages": [
-          "example-page",
-          "launch-organic-ads",
-          "changelog"
-        ]
+        "href": "/changelog"
       }
     ]
   },
