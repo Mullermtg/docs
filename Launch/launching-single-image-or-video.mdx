@@ -6,10 +6,10 @@ sidebarTitle: "Launch image or video ads"
 
 Use image or video ads when each ad should be built from one creative or one creative group. This is the standard launch flow for single-image ads, single-video ads, and ads that use the same creative in multiple placement formats.
 
-## Step-by-step guide
+# Step-by-step guide
 
 <Steps>
-  <Step title="Open Launch">
+  <Step title="Open Launch" titleSize="h4">
     Go to `Launch` and click `Select Creatives`.
 
     <img
@@ -18,7 +18,7 @@ Use image or video ads when each ad should be built from one creative or one cre
       style={{ width: "100%" }}
     />
   </Step>
-  <Step title="Select the creatives for the batch">
+  <Step title="Select the creatives for the batch" titleSize="h4">
     Select every creative you want to include in this image or video ad launch, then click `Continue`.
 
     You can select creatives across different placement formats. For example, if you want to launch ads with `1x1`, `4x5`, and `9x16` versions, select all of those files before continuing.
@@ -29,47 +29,45 @@ Use image or video ads when each ad should be built from one creative or one cre
 
     <iframe src="https://www.youtube.com/embed/Nx85-E0xQn0?autoplay=1&mute=1&loop=1&playlist=Nx85-E0xQn0&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Selecting creatives for an Adtool launch" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
   </Step>
-  <Step title="Group matching placements">
+  <Step title="Group matching placements" titleSize="h4">
     Adtool automatically groups creatives when their names match and the placement size is the only difference.
 
     For example, `Video V6 9x16` and `Video V6 4x5` can be grouped together because they share the same base name and use different placement formats.
 
-    If the creatives are not grouped automatically, drag them into the correct group manually before continuing.
+    If the creatives are not grouped automatically, drag them into the correct group manually before continuing. For a deeper explanation of supported placement tags and matching rules, see the [auto-grouping guide](/Creatives/auto-grouping-guide).
+
+    <Accordion title="How grouping works for image or video ads">
+      Each group represents the creative assets that belong to the same ad. A group can contain one creative, or multiple versions of the same creative made for different placements.
+
+      | **Creative setup** | **How to group it** |
+      | --- | --- |
+      | One image or one video | Keep it as a single creative group. |
+      | Same creative in multiple formats | Group the matching placement versions together. |
+      | Different ads in the same launch | Keep each ad in its own group. |
+
+      Use the same base name for creatives that belong together, then add the placement size to the end of the file name.
+
+      | **File name** | **Placement** |
+      | --- | --- |
+      | `Video V6 1x1.mp4` | Square / feed placement |
+      | `Video V6 4x5.mp4` | Portrait / feed placement |
+      | `Video V6 9x16.mp4` | Story / Reel placement |
+
+      These files can be grouped because `Video V6` is the shared base name and each file uses a different placement size.
+    </Accordion>
 
     <iframe src="https://www.youtube.com/embed/UeIUTnewZKU?autoplay=1&mute=1&loop=1&playlist=UeIUTnewZKU&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Grouping image or video creatives by placement" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
   </Step>
-  <Step title="Add ad details">
+  <Step title="Add ad details" titleSize="h4">
     Click `Continue`, then fill out the remaining ad information, including primary text, headline, description, CTA, and any other required launch settings.
 
     Review the previews for each placement before launching so you can confirm the creative and text look correct together.
   </Step>
-  <Step title="Launch the ads">
+  <Step title="Launch the ads" titleSize="h4">
     When the batch is ready, click `Launch`.
   </Step>
 </Steps>
 
-## How grouping works for image or video ads
-
-Each group represents the creative assets that belong to the same ad. A group can contain one creative, or multiple versions of the same creative made for different placements.
-
-| **Creative setup** | **How to group it** |
-| --- | --- |
-| One image or one video | Keep it as a single creative group. |
-| Same creative in multiple formats | Group the matching placement versions together. |
-| Different ads in the same launch | Keep each ad in its own group. |
-
-## Naming example
-
-Use the same base name for creatives that belong together, then add the placement size to the end of the file name.
-
-| **File name** | **Placement** |
-| --- | --- |
-| `Video V6 1x1.mp4` | Square / feed placement |
-| `Video V6 4x5.mp4` | Portrait / feed placement |
-| `Video V6 9x16.mp4` | Story / Reel placement |
-
-These files can be grouped because `Video V6` is the shared base name and each file uses a different placement size.
-
-## Video guide
+# Video guide
 
 <iframe src="https://www.youtube.com/embed/z0XP9IqbLs8" title="How to launch image or video ads in Adtool" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
