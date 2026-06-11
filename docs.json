@@ -49,17 +49,6 @@
             ]
           },
           {
-            "group": "Ad types",
-            "icon": "badge-ad",
-            "pages": [
-              "Launch/launching-flexible-ads",
-              "Launch/launching-carousel-ads",
-              "Launch/launching-single-image-or-video",
-              "Launch/multi-language-ads",
-              "Launch/partnership-ads"
-            ]
-          },
-          {
             "group": "Creatives",
             "icon": "image",
             "pages": [
