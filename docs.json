@@ -14,67 +14,79 @@
         "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting started",
-            "icon": "circle-play",
+            "group": "Help articles",
+            "icon": "book-open",
             "pages": [
-              "Getting-Started/full-walkthrough"
-            ]
-          },
-          {
-            "group": "Ad types",
-            "icon": "arrow-alt-circle-right",
-            "pages": [
-              "Launch/launching-single-image-or-video",
-              "Launch/launching-carousel-ads",
-              "Launch/partnership-ads",
-              "Launch/multi-language-ads",
-              "Launch/launching-flexible-ads"
-            ]
-          },
-          {
-            "group": "Launch",
-            "icon": "rocket",
-            "pages": [
-              "Launch/grouping-creatives",
-              "Launch/grouping-with-3-placement-groups",    
-              "Launch/dublicate-campaigns",
-              "Launch/dublicate-ad-sets",
-              "Launch/customize-ads-individually",
-              "Launch/bulk-edit-ad-names",
-              "Launch/work-effectively-with-relaunch-function",
-              "Launch/adjust-additional-settings",
-              "Launch/save-as-draft",
-              "Launch/schedule-ads",
-              "Launch/preview-link"          
-            ]
-          },
-          {
-            "group": "Creatives",
-            "icon": "image",
-            "pages": [
-              "Creatives/upload-creatives",
-              "Creatives/set-custom-thumbnails",
-              "Creatives/tagging-your-creatives",
-              "Creatives/auto-grouping-guide"
-            ]
-          },
-          {
-            "group": "Settings",
-            "icon": "cog",
-            "pages": [
-              "Settings/creative-enhancements",
-              "Settings/UTM-parameters",
-              "Settings/manage-connections",
-              "Settings/naming-convention"
-            ]
-          },
-          {
-            "group": "Troubleshoot",
-            "icon": "bug",
-            "pages": [
-              "Troubleshoot/cant-see-my-FB-or-IG-page",
-              "Troubleshoot/cant-see-ads",
-              "Troubleshoot/reconnect-meta"
+              {
+                "group": "Getting started",
+                "icon": "circle-play",
+                "expanded": true,
+                "pages": [
+                  "Getting-Started/full-walkthrough"
+                ]
+              },
+              {
+                "group": "Ad types",
+                "icon": "arrow-alt-circle-right",
+                "expanded": false,
+                "pages": [
+                  "Launch/launching-single-image-or-video",
+                  "Launch/launching-carousel-ads",
+                  "Launch/partnership-ads",
+                  "Launch/multi-language-ads",
+                  "Launch/launching-flexible-ads"
+                ]
+              },
+              {
+                "group": "Launch",
+                "icon": "rocket",
+                "expanded": false,
+                "pages": [
+                  "Launch/grouping-creatives",
+                  "Launch/grouping-with-3-placement-groups",
+                  "Launch/dublicate-campaigns",
+                  "Launch/dublicate-ad-sets",
+                  "Launch/customize-ads-individually",
+                  "Launch/bulk-edit-ad-names",
+                  "Launch/work-effectively-with-relaunch-function",
+                  "Launch/adjust-additional-settings",
+                  "Launch/save-as-draft",
+                  "Launch/schedule-ads",
+                  "Launch/preview-link"
+                ]
+              },
+              {
+                "group": "Creatives",
+                "icon": "image",
+                "expanded": false,
+                "pages": [
+                  "Creatives/upload-creatives",
+                  "Creatives/set-custom-thumbnails",
+                  "Creatives/tagging-your-creatives",
+                  "Creatives/auto-grouping-guide"
+                ]
+              },
+              {
+                "group": "Settings",
+                "icon": "cog",
+                "expanded": false,
+                "pages": [
+                  "Settings/creative-enhancements",
+                  "Settings/UTM-parameters",
+                  "Settings/manage-connections",
+                  "Settings/naming-convention"
+                ]
+              },
+              {
+                "group": "Troubleshoot",
+                "icon": "bug",
+                "expanded": false,
+                "pages": [
+                  "Troubleshoot/cant-see-my-FB-or-IG-page",
+                  "Troubleshoot/cant-see-ads",
+                  "Troubleshoot/reconnect-meta"
+                ]
+              }
             ]
           }
         ]
