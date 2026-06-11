@@ -1,75 +1,80 @@
 ---
 title: "How to group creatives with 3 placement groups"
-description: "In this document, we're gonna show you how you can group creatives for all placements groups"
-sidebarTitle: "Group with 3 placement groups"
+description: "Learn how to group vertical, square, and horizontal creatives for the same ad."
+sidebarTitle: "3-placement grouping"
 ---
 
-Adtool supports all three placement groups, meaning you can work with one, two or three formats for the same ad.
+Use this workflow when one ad should include creatives for all three placement groups: Story / Reel, feed, and horizontal.
 
-**Recommended setup:**
+## Recommended setup
 
-- Vertical: 9x16
-- Square: 4x5 or 1x1
-- Horizontal: 1x1 or 16x9
+For full placement coverage, the recommended setup is to use all three placement groups for the same ad: vertical, feed, and horizontal.
 
-**BONUS**: Adtool automatically groups your creatives based on their dimensions. No manual placement setup required.
+- Vertical / Story-Reel: a supported vertical format, such as 9x16
+- Feed / Square: a supported square or portrait format, such as 1x1 or 4x5
+- Horizontal / Landscape-Wide: a supported landscape or wide format, such as 16x9 or 1.91:1
 
-## **How it works**
+Adtool automatically groups creatives when the filenames share the same base name and use different supported placement tags or dimensions. No manual placement setup is required when the files are recognized correctly.
 
-### Video Guide
-
-<iframe src="https://www.youtube.com/embed/iRRKuULA4UU" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
-
-### Step-by-Step Guide
+## Group all three placement groups
 
 <Steps>
-  <Step title="Go to 'Launch' followed by 'Select Creatives'">
+  <Step title="Go to 'Launch' and select creatives" titleSize="h4">
     <img
       src="/images/Go_to_launch_select_creatives.png"
-      alt="Go To Launch Select Creatives Pn"
-      title="Go To Launch Select Creatives Pn"
+      alt="Launch page with Select Creatives highlighted"
+      title="Launch page with Select Creatives highlighted"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Select the creatives for your ads and click 'Continue'">
-    **TIP**: Find your desired creatives by using filters and/or using 'select all' button.
+  <Step title="Select the vertical, square, and horizontal creatives" titleSize="h4">
+    Select the creatives that belong to the same ad, then click 'Continue'.
 
-    You can also click and drag the mouse to easily select your creatives.
-
-    <iframe src="https://www.youtube.com/embed/Nx85-E0xQn0?autoplay=1&mute=1&loop=1&playlist=Nx85-E0xQn0&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Adtool walkthrough video" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
+    <iframe src="https://www.youtube.com/embed/Nx85-E0xQn0?autoplay=1&mute=1&loop=1&playlist=Nx85-E0xQn0&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Selecting creatives in Adtool" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
   </Step>
-  <Step title="Next step is to group the creatives for the ads">
-    If two or three creatives share the same name - except for the dimension - Adtool will recognize them as belonging to the same group.
+  <Step title="Check that Adtool grouped the three formats" titleSize="h4">
+    If the creatives share the same base name and each file represents a different supported placement group, Adtool recognizes them as one group.
 
-    **We support grouping for all 3 main placement groups.**
+    <Expandable title="Supported format and tag options">
+      For full placement coverage, use one creative from each placement group.
 
-    **Dimension formats that we currently support:**\
-    1x1, 4x5 & 9x16\
-    1:1 & 9:16\
-    1_1 & 1_1\
-    1-1 & 1-1
+      | **Placement group** | **Accepted tags** |
+      | --- | --- |
+      | Vertical / Story-Reel | `9x16`, `9:16`, `9_16`, `9-16`, `9.16`, `(916)`, `1080x1920`, `story`, `stories`, `reel`, `reels`, `vertical`, or a clear 9:16 pixel size like `1440x2560`. |
+      | Feed / Square | **Square:**`1x1`, `1:1`, `1_1`, `1-1`, `1.1`, `(11)`, `1080x1080`, `1200x1200`, `square`, `feed`, `post`, `ig`, or a clear square pixel size like `1440x1440`.<br /><br />**Portrait:**`4x5`, `4:5`, `4_5`, `4-5`, `4.5`, `(45)`, `1080x1350`, or a clear 4:5 pixel size like `1080x1350`. |
+      | Horizontal / Landscape-Wide | **Landscape:**`16x9`, `16:9`, `16_9`, `16-9`, `16.9`, `(169)`, `1920x1080`, `landscape`, or a clear 16:9 pixel size like `1920x1080`.<br /><br />**Wide:**`1.91:1`, `1.91`, `1:91`, `1_91_1`, `1-91-1`, `(1911)`, `191x100`, `1200x628`, `horizontal`, `wide`, or a clear 1.91:1 pixel size like `1200x628`. |
 
-    **Example:**\
-    'Video V6 9x16', 'Video V6 4x5' & 'Video V6 16x9' will automatically be grouped together.
+      Pixel sizes can use `x`, `X`, or `×`. For example, `1440x2560`, `1440X2560`, and `1440×2560` can all be read as pixel sizes.
 
-    This allows you to easily launch ads in multiple aspect ratios without any manual setup.
+      The placement tag must stand on its own in the file name. It can be separated with a space, underscore, hyphen, or brackets.
+    </Expandable>
 
-    If the filenames don’t match, you can still group them manually with a simple drag and drop.
+    Read more: [Auto-grouping guide](/Creatives/auto-grouping-guide).
+
+    Example:
+
+    - 'Video V6 9x16' for Story / Reel
+    - 'Video V6 4x5' for feed
+    - 'Video V6 16x9' for horizontal
+
+    These can be grouped together because the base name matches and each file uses a different supported placement format.
+  </Step>
+  <Step title="Drag creatives into the group if filenames do not match" titleSize="h4">
+    If Adtool does not group the three formats automatically, drag and drop the creatives into the correct group before continuing.
   </Step>
 </Steps>
 
-### **How to group specific ad types**
+## Related launch guides
 
-**Watch the following guides:**
-
-<Card title="Launch image or video ads" icon="arrow-right" color="#F64900" horizontal href="/Launch/launching-single-image-or-video">
-  
+<Card title="Launch image or video ads" color="#F64900" icon="arrow-right" horizontal href="/Launch/launching-single-image-or-video">
 </Card>
 
-<Card title="Launch carousel ads" icon="arrow-right" color="#F64900" horizontal href="/Launch/launching-carousel-ads">
-  
+<Card title="Launch carousel ads" color="#F64900" icon="arrow-right" horizontal href="/Launch/launching-carousel-ads">
 </Card>
 
-<Card title="Launch flexible ads" icon="arrow-right" color="#F64900" horizontal href="/Launch/launching-flexible-ads">
-  
+<Card title="Launch flexible ads" color="#F64900" icon="arrow-right" horizontal href="/Launch/launching-flexible-ads">
 </Card>
+
+## Video guide
+
+<iframe src="https://www.youtube.com/embed/iRRKuULA4UU" title="Adtool video guide for grouping creatives across three placement groups" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />

@@ -1,75 +1,74 @@
 ---
-title: "How to Group Creatives For Various Placements"
-description: "In this document, we're gonna show you how you can group creatives for different placements"
-sidebarTitle: "Group creatives"
+title: "How to group creatives"
+description: "Learn how to group related creatives before launching ads in Adtool."
+sidebarTitle: "2-placement grouping"
 ---
 
-Adtool supports all three placement groups, meaning you can work with one, two or three formats for the same ad.
+Use 2-placement grouping when the same ad should include two creative versions for different placement groups, such as feed and Story / Reel, or feed and horizontal.
 
-**Recommended setup:**
+## Recommended setup
 
-- Vertical: 9x16
-- Square: 4x5 or 1x1
-- Horizontal: 1x1 or 16x9
+For two-placement grouping, the recommended setup is one vertical creative and one feed creative for the same ad.
 
-**BONUS**: Adtool automatically groups your creatives based on their dimensions. No manual placement setup required.
+- Vertical: a supported Story / Reel format, such as 9x16
+- Feed: a supported square or portrait format, such as 1x1 or 4x5
 
-## **How it works**
+Adtool can automatically group creatives when the filenames share the same base name and use different supported placement tags or dimensions. You can also group creatives manually with drag and drop.
 
-### Video Guide
-
-<iframe src="https://www.youtube.com/embed/iRRKuULA4UU" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
-
-### Step-by-Step Guide
+## Group creatives before launch
 
 <Steps>
-  <Step title="Go to 'Launch' followed by 'Select Creatives'">
+  <Step title="Go to 'Launch' and select creatives" titleSize="h4">
     <img
       src="/images/Go_to_launch_select_creatives.png"
-      alt="Go To Launch Select Creatives Pn"
-      title="Go To Launch Select Creatives Pn"
+      alt="Launch page with Select Creatives highlighted"
+      title="Launch page with Select Creatives highlighted"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Select the creatives for your ads and click 'Continue'">
-    **TIP**: Find your desired creatives by using filters and/or using 'select all' button.
+  <Step title="Select the creatives for your ads" titleSize="h4">
+    Use filters, the 'select all' button, or click and drag to select the creatives you want to launch. Then click 'Continue'.
 
-    You can also click and drag the mouse to easily select your creatives.
-
-    <iframe src="https://www.youtube.com/embed/Nx85-E0xQn0?autoplay=1&mute=1&loop=1&playlist=Nx85-E0xQn0&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Adtool walkthrough video" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
+    <iframe src="https://www.youtube.com/embed/Nx85-E0xQn0?autoplay=1&mute=1&loop=1&playlist=Nx85-E0xQn0&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Selecting creatives in Adtool" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
   </Step>
-  <Step title="Next step is to group the creatives for the ads">
-    If two or three creatives share the same name - except for the dimension - Adtool will recognize them as belonging to the same group.
+  <Step title="Review the creative groups" titleSize="h4">
+    If two creatives share the same base name and use different supported placement tags or dimensions, Adtool recognizes them as belonging to the same group.
 
-    **We support grouping for all 3 main placement groups.**
+    <Expandable title="Supported format and tag options">
+      For the recommended two-placement setup, use one vertical creative and one feed creative.
 
-    **Dimension formats that we currently support:**\
-    1x1, 4x5 & 9x16\
-    1:1 & 9:16\
-    1_1 & 1_1\
-    1-1 & 1-1
+      | **Placement** | **Accepted tags** |
+      | --- | --- |
+      | Story / Reel | `9x16`, `9:16`, `9_16`, `9-16`, `9.16`, `(916)`, `1080x1920`, `story`, `stories`, `reel`, `reels`, `vertical`, or a clear 9:16 pixel size like `1440x2560`. |
+      | Feed placement | **Square:**`1x1`, `1:1`, `1_1`, `1-1`, `1.1`, `(11)`, `1080x1080`, `1200x1200`, `square`, `feed`, `post`, `ig`, or a clear square pixel size like `1440x1440`.<br /><br />**Portrait:**`4x5`, `4:5`, `4_5`, `4-5`, `4.5`, `(45)`, `1080x1350`, or a clear 4:5 pixel size like `1080x1350`. |
 
-    **Example:**\
-    'Video V6 9x16', 'Video V6 4x5' & 'Video V6 16x9' will automatically be grouped together.
+      Pixel sizes can use `x`, `X`, or `×`. For example, `1440x2560`, `1440X2560`, and `1440×2560` can all be read as pixel sizes.
 
-    This allows you to easily launch ads in multiple aspect ratios without any manual setup.
+      The placement tag must stand on its own in the file name. It can be separated with a space, underscore, hyphen, or brackets.
 
-    If the filenames don’t match, you can still group them manually with a simple drag and drop.
+      Horizontal creatives are covered in the [3-placement grouping workflow](/Launch/grouping-with-3-placement-groups).
+    </Expandable>
+
+    Read more: [Auto-grouping guide](/Creatives/auto-grouping-guide).
+
+    For example, 'Video V6 9x16' and 'Video V6 4x5' can be grouped together because the base name matches and the placement format changes.
+  </Step>
+  <Step title="Manually group creatives if needed" titleSize="h4">
+    If the filenames do not match, drag and drop creatives into the correct group before continuing.
   </Step>
 </Steps>
 
-### **How to group specific ad types**
+## Video guide
 
-**Watch the following guides:**
+<iframe src="https://www.youtube.com/embed/iRRKuULA4UU" title="Adtool video guide for grouping creatives" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-<Card title="Launch image or video ads" icon="arrow-right" color="#F64900" horizontal href="/Launch/launching-single-image-or-video">
-  
+## Related launch guides
+
+<Card title="Launch image or video ads" color="#F64900" icon="arrow-right" horizontal href="/Launch/launching-single-image-or-video">
 </Card>
 
-<Card title="Launch carousel ads" icon="arrow-right" color="#F64900" horizontal href="/Launch/launching-carousel-ads">
-  
+<Card title="Launch carousel ads" color="#F64900" icon="arrow-right" horizontal href="/Launch/launching-carousel-ads">
 </Card>
 
-<Card title="Launch flexible ads" icon="arrow-right" color="#F64900" horizontal href="/Launch/launching-flexible-ads">
-  
+<Card title="Launch flexible ads" color="#F64900" icon="arrow-right" horizontal href="/Launch/launching-flexible-ads">
 </Card>
