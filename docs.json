@@ -93,9 +93,9 @@
       {
         "tab": "Changelog",
         "pages": [
+          "changelog",
           "example-page",
-          "launch-organic-ads",
-          "changelog"
+          "launch-organic-ads"
         ]
       }
     ]
