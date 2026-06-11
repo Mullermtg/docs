@@ -14,17 +14,17 @@
         "tab": "Help Center",
         "groups": [
           {
+            "group": "Getting started",
+            "icon": "circle-play",
+            "expanded": true,
+            "pages": [
+              "Getting-Started/full-walkthrough"
+            ]
+          },
+          {
             "group": "Help articles",
             "icon": "book-open",
             "pages": [
-              {
-                "group": "Getting started",
-                "icon": "circle-play",
-                "expanded": true,
-                "pages": [
-                  "Getting-Started/full-walkthrough"
-                ]
-              },
               {
                 "group": "Ad types",
                 "icon": "arrow-alt-circle-right",
