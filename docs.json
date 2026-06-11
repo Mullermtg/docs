@@ -9,6 +9,15 @@
   },
   "favicon": "/logo/adtool-favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Changelog",
+          "icon": "list",
+          "href": "/changelog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Help Center",
@@ -88,14 +97,6 @@
               "Troubleshoot/reconnect-meta"
             ]
           }
-        ]
-      },
-      {
-        "tab": "Updates",
-        "pages": [
-          "changelog",
-          "example-page",
-          "launch-organic-ads"
         ]
       }
     ]
