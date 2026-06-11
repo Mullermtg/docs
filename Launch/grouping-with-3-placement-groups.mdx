@@ -6,11 +6,13 @@ sidebarTitle: "3-placement grouping"
 
 Use this workflow when one ad should include creatives for all three placement groups: Story / Reel, feed, and horizontal.
 
-Recommended setup:
+## Recommended setup
 
-- Story / Reel: a supported vertical format, such as 9x16
-- Feed: a supported square or portrait format, such as 1x1 or 4x5
-- Horizontal: a supported landscape or wide format, such as 16x9 or 1.91:1
+For full placement coverage, the recommended setup is to use all three placement groups for the same ad: vertical, feed, and horizontal.
+
+- Vertical / Story-Reel: a supported vertical format, such as 9x16
+- Feed / Square: a supported square or portrait format, such as 1x1 or 4x5
+- Horizontal / Landscape-Wide: a supported landscape or wide format, such as 16x9 or 1.91:1
 
 Adtool automatically groups creatives when the filenames share the same base name and use different supported placement tags or dimensions. No manual placement setup is required when the files are recognized correctly.
 
@@ -33,13 +35,29 @@ Adtool automatically groups creatives when the filenames share the same base nam
   <Step title="Check that Adtool grouped the three formats" titleSize="h4">
     If the creatives share the same base name and each file represents a different supported placement group, Adtool recognizes them as one group.
 
+    <Expandable title="Supported format and tag options">
+      For full placement coverage, use one creative from each placement group.
+
+      | **Placement group** | **Accepted tags** |
+      | --- | --- |
+      | Vertical / Story-Reel | `9x16`, `9:16`, `9_16`, `9-16`, `9.16`, `(916)`, `1080x1920`, `story`, `stories`, `reel`, `reels`, `vertical`, or a clear 9:16 pixel size like `1440x2560`. |
+      | Feed / Square | **Square:**`1x1`, `1:1`, `1_1`, `1-1`, `1.1`, `(11)`, `1080x1080`, `1200x1200`, `square`, `feed`, `post`, `ig`, or a clear square pixel size like `1440x1440`.<br /><br />**Portrait:**`4x5`, `4:5`, `4_5`, `4-5`, `4.5`, `(45)`, `1080x1350`, or a clear 4:5 pixel size like `1080x1350`. |
+      | Horizontal / Landscape-Wide | **Landscape:**`16x9`, `16:9`, `16_9`, `16-9`, `16.9`, `(169)`, `1920x1080`, `landscape`, or a clear 16:9 pixel size like `1920x1080`.<br /><br />**Wide:**`1.91:1`, `1.91`, `1:91`, `1_91_1`, `1-91-1`, `(1911)`, `191x100`, `1200x628`, `horizontal`, `wide`, or a clear 1.91:1 pixel size like `1200x628`. |
+
+      Pixel sizes can use `x`, `X`, or `×`. For example, `1440x2560`, `1440X2560`, and `1440×2560` can all be read as pixel sizes.
+
+      The placement tag must stand on its own in the file name. It can be separated with a space, underscore, hyphen, or brackets.
+    </Expandable>
+
+    Read more: [Auto-grouping guide](/Creatives/auto-grouping-guide).
+
     Example:
 
     - 'Video V6 9x16' for Story / Reel
     - 'Video V6 4x5' for feed
     - 'Video V6 16x9' for horizontal
 
-    These can be grouped together because the base name matches and each file uses a different supported placement format. For the full current list of accepted placement tags, see the [auto-grouping guide](/Creatives/auto-grouping-guide).
+    These can be grouped together because the base name matches and each file uses a different supported placement format.
   </Step>
   <Step title="Drag creatives into the group if filenames do not match" titleSize="h4">
     If Adtool does not group the three formats automatically, drag and drop the creatives into the correct group before continuing.

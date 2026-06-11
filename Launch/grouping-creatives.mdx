@@ -6,6 +6,13 @@ sidebarTitle: "2-placement grouping"
 
 Use 2-placement grouping when the same ad should include two creative versions for different placement groups, such as feed and Story / Reel, or feed and horizontal.
 
+## Recommended setup
+
+For two-placement grouping, the recommended setup is one vertical creative and one feed creative for the same ad.
+
+- Vertical: a supported Story / Reel format, such as 9x16
+- Feed: a supported square or portrait format, such as 1x1 or 4x5
+
 Adtool can automatically group creatives when the filenames share the same base name and use different supported placement tags or dimensions. You can also group creatives manually with drag and drop.
 
 ## Group creatives before launch
@@ -27,7 +34,22 @@ Adtool can automatically group creatives when the filenames share the same base 
   <Step title="Review the creative groups" titleSize="h4">
     If two creatives share the same base name and use different supported placement tags or dimensions, Adtool recognizes them as belonging to the same group.
 
-    Supported placement tags include square and portrait feed formats, Story / Reel formats, and horizontal formats. For the full current list of accepted tags, separators, and pixel-size rules, see the [auto-grouping guide](/Creatives/auto-grouping-guide).
+    <Expandable title="Supported format and tag options">
+      For the recommended two-placement setup, use one vertical creative and one feed creative.
+
+      | **Placement** | **Accepted tags** |
+      | --- | --- |
+      | Story / Reel | `9x16`, `9:16`, `9_16`, `9-16`, `9.16`, `(916)`, `1080x1920`, `story`, `stories`, `reel`, `reels`, `vertical`, or a clear 9:16 pixel size like `1440x2560`. |
+      | Feed placement | **Square:**`1x1`, `1:1`, `1_1`, `1-1`, `1.1`, `(11)`, `1080x1080`, `1200x1200`, `square`, `feed`, `post`, `ig`, or a clear square pixel size like `1440x1440`.<br /><br />**Portrait:**`4x5`, `4:5`, `4_5`, `4-5`, `4.5`, `(45)`, `1080x1350`, or a clear 4:5 pixel size like `1080x1350`. |
+
+      Pixel sizes can use `x`, `X`, or `×`. For example, `1440x2560`, `1440X2560`, and `1440×2560` can all be read as pixel sizes.
+
+      The placement tag must stand on its own in the file name. It can be separated with a space, underscore, hyphen, or brackets.
+
+      Horizontal creatives are covered in the [3-placement grouping workflow](/Launch/grouping-with-3-placement-groups).
+    </Expandable>
+
+    Read more: [Auto-grouping guide](/Creatives/auto-grouping-guide).
 
     For example, 'Video V6 9x16' and 'Video V6 4x5' can be grouped together because the base name matches and the placement format changes.
   </Step>
