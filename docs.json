@@ -9,15 +9,6 @@
   },
   "favicon": "/logo/adtool-favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Changelog",
-          "icon": "list",
-          "href": "/changelog"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Help Center",
@@ -95,6 +86,13 @@
               "Troubleshoot/cant-see-my-FB-or-IG-page",
               "Troubleshoot/cant-see-ads",
               "Troubleshoot/reconnect-meta"
+            ]
+          },
+          {
+            "group": "Changelog",
+            "icon": "list",
+            "pages": [
+              "changelog"
             ]
           }
         ]
