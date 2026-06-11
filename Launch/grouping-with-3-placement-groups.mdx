@@ -1,18 +1,18 @@
 ---
 title: "How to group creatives with 3 placement groups"
 description: "Learn how to group vertical, square, and horizontal creatives for the same ad."
-sidebarTitle: "Group with 3 placement groups"
+sidebarTitle: "3-placement grouping"
 ---
 
-Use this workflow when one ad should include creatives for all three placement groups.
+Use this workflow when one ad should include creatives for all three placement groups: Story / Reel, feed, and horizontal.
 
 Recommended setup:
 
-- Vertical: 9x16
-- Square: 4x5 or 1x1
-- Horizontal: 1x1 or 16x9
+- Story / Reel: a supported vertical format, such as 9x16
+- Feed: a supported square or portrait format, such as 1x1 or 4x5
+- Horizontal: a supported landscape or wide format, such as 16x9 or 1.91:1
 
-Adtool automatically groups creatives based on their dimensions when the filenames match. No manual placement setup is required when the files are recognized correctly.
+Adtool automatically groups creatives when the filenames share the same base name and use different supported placement tags or dimensions. No manual placement setup is required when the files are recognized correctly.
 
 ## Group all three placement groups
 
@@ -31,15 +31,15 @@ Adtool automatically groups creatives based on their dimensions when the filenam
     <iframe src="https://www.youtube.com/embed/Nx85-E0xQn0?autoplay=1&mute=1&loop=1&playlist=Nx85-E0xQn0&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Selecting creatives in Adtool" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
   </Step>
   <Step title="Check that Adtool grouped the three formats" titleSize="h4">
-    If the creatives share the same name except for the dimension, Adtool recognizes them as one group.
+    If the creatives share the same base name and each file represents a different supported placement group, Adtool recognizes them as one group.
 
     Example:
 
-    - 'Video V6 9x16'
-    - 'Video V6 4x5'
-    - 'Video V6 16x9'
+    - 'Video V6 9x16' for Story / Reel
+    - 'Video V6 4x5' for feed
+    - 'Video V6 16x9' for horizontal
 
-    These can be grouped together because the name matches and only the dimension changes.
+    These can be grouped together because the base name matches and each file uses a different supported placement format. For the full current list of accepted placement tags, see the [auto-grouping guide](/Creatives/auto-grouping-guide).
   </Step>
   <Step title="Drag creatives into the group if filenames do not match" titleSize="h4">
     If Adtool does not group the three formats automatically, drag and drop the creatives into the correct group before continuing.
