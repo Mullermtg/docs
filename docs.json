@@ -80,12 +80,18 @@
             ]
           },
           {
-            "group": "Troubleshoot",
+            "group": "Support",
             "icon": "bug",
             "pages": [
-              "Troubleshoot/cant-see-my-FB-or-IG-page",
-              "Troubleshoot/cant-see-ads",
-              "Troubleshoot/reconnect-meta"
+              {
+                "group": "Troubleshoot",
+                "expanded": false,
+                "pages": [
+                  "Troubleshoot/cant-see-my-FB-or-IG-page",
+                  "Troubleshoot/cant-see-ads",
+                  "Troubleshoot/reconnect-meta"
+                ]
+              }
             ]
           }
         ]
