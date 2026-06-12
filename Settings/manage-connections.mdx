@@ -1,27 +1,81 @@
 ---
 title: "How to manage connections"
 sidebarTitle: "Manage connections"
-description: "In this document, we’ll show you how to manage your connections"
+description: "Manage connected Meta/Facebook and Google Drive accounts in Adtool, including what to check when a connection is missing or expired."
 ---
 
-### Step-by-step Guide
+Use `Connections` in `Settings` to manage the external accounts Adtool can access, including Meta/Facebook and Google Drive. Use this page when you need to connect, reconnect, disconnect, or check why an account is not available in Adtool.
+
+## What connections mean in Adtool
+
+Connections are the permissions that allow Adtool to access external tools on your behalf. They determine which connected resources Adtool can show and use during workflows such as selecting Meta assets or importing creatives from Google Drive.
+
+| **Connection** | **What it can affect** |
+| --- | --- |
+| Meta/Facebook | Access to Meta-related accounts, pages, and ad workflow resources available to your user. |
+| Google Drive | Access to Google Drive files used when importing creatives. |
+
+<Note>
+  The exact accounts and assets you can see depend on both the connection in Adtool and the permissions your user has in the connected platform.
+</Note>
+
+## Step-by-step guide
 
 <Steps>
-  <Step title="Go to 'Settings'">
+  <Step title="Open Settings" titleSize="h4">
+    Go to `Settings`.
+
     <img
       src="/images/FB_IG_PAGE1.png"
-      alt="FB IG PAGE1 Pn"
+      alt="Settings page in Adtool"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Click 'Connections'">
+  <Step title="Open Connections" titleSize="h4">
+    Click `Connections`.
+
     <img
       src="/images/FB_IG_PAGE2.png"
-      alt="FB IG PAGE2 Pn"
+      alt="Connections section in Settings"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Make the desired changes to your connections.">
-    From here you can manage your connection with Facebook and Google Drive
+  <Step title="Manage the connection" titleSize="h4">
+    Review the available connections and make the change you need, such as connecting, reconnecting, or disconnecting Facebook/Meta or Google Drive.
   </Step>
 </Steps>
+
+## What disconnecting or reconnecting affects
+
+| **Action** | **What to expect** |
+| --- | --- |
+| Connect | Adtool can request access to the external account and show resources your user is allowed to access. |
+| Reconnect | Refreshes the connection when permissions are expired, missing, or need to be granted again. |
+| Disconnect | Removes that connection from Adtool. Related resources may stop appearing until you connect again. |
+
+Disconnecting a connection does not automatically change permissions inside Meta/Facebook or Google Drive. It only changes whether Adtool has an active connection for that service.
+
+## What to check if a connection does not appear
+
+Check these items before assuming the connection is broken:
+
+| **Check** | **Why it matters** |
+| --- | --- |
+| You are in the right Adtool workspace/account | Connections are managed from the `Settings` area you are currently using. |
+| Your external account has access | Adtool can only show resources your connected Meta/Facebook or Google user can access. |
+| The connection is not expired | If the platform requires fresh authorization, reconnect the account from `Connections`. |
+| Required permissions were approved | If you skipped or rejected permissions during connection, the resource may not appear. |
+
+## Common cases
+
+<Expandable title="My Meta/Facebook ad account or page is missing">
+  Open `Settings`, go to `Connections`, and reconnect Meta/Facebook. If it still does not appear, check that your Meta user has access to the missing asset in Meta and that the required permissions were approved during connection.
+</Expandable>
+
+<Expandable title="My Google Drive files are not available">
+  Open `Settings`, go to `Connections`, and reconnect Google Drive. Then confirm the connected Google user has access to the files or folders you are trying to use.
+</Expandable>
+
+<Expandable title="I changed permissions in Meta or Google Drive">
+  Reconnect the relevant connection in Adtool so the updated permissions can be reflected in your Adtool workflows.
+</Expandable>

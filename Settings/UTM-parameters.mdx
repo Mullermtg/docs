@@ -1,55 +1,109 @@
 ---
-title: "How to set UTM-parameters"
-sidebarTitle: "UTM-parameters"
-description: "In this document, we're gonna show you how you can set UTM-paramters for all your accounts or individually."
+title: "How to set UTM parameters"
+sidebarTitle: "UTM parameters"
+description: "Set default UTM tracking for one ad account or all accounts so launched ads use the right URL parameters."
 ---
 
-### Step-by-step Guide
+Use UTM parameters to add tracking values to ads launched through Adtool. Set them in `Settings` when you want Adtool to use a consistent tracking structure for one ad account or across all accounts.
+
+UTMs help analytics tools identify where traffic came from, which campaign generated it, and which ad or ad set was clicked. In Adtool, the UTM setting is account-level by default and is applied when ads are prepared for launch.
+
+## What this setting affects
+
+| **Setting** | **What it affects** |
+| --- | --- |
+| Selected ad account | The default UTM tracking setup for ads launched from that account. |
+| `Use for all accounts` | Applies the same UTM setup across your accounts and replaces account-specific UTM defaults. |
+| Dynamic Meta values | Values such as `{{campaign.name}}`, `{{adset.name}}`, and `{{ad.name}}` can be used in the UTM string. |
+
+<Note>
+  UTM parameters only help tracking when the launched ads send traffic to a URL where those parameters can be used by your analytics setup.
+</Note>
+
+## Step-by-step guide
 
 <Steps>
-  <Step title="Go to 'Settings'">
+  <Step title="Open Settings" titleSize="h4">
+    Go to `Settings`.
+
     <img
       src="/images/FB_IG_PAGE1.png"
-      alt="FB IG PAGE1 Pn"
+      alt="Settings page in Adtool"
       title="FB IG PAGE1 Pn"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Select the ad account for which the UTM parameters need to be changed.">
+  <Step title="Select the ad account" titleSize="h4">
+    Select the ad account where the UTM parameters should be changed.
+
     <img
       src="/images/Select_ad_accounts.png"
-      alt="Select Ad Accounts Pn"
+      alt="Ad account selector in Settings"
       title="Select Ad Accounts Pn"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Scroll down to the section: 'UTM tracking'" iconType="regular">
+  <Step title="Find UTM tracking" iconType="regular" titleSize="h4">
+    Scroll to the `UTM tracking` section.
+
     <img
       src="/images/select_utm-paramter.png"
-      alt="Select Utm Paramter Pn"
+      alt="UTM tracking section in Settings"
       title="Select Utm Paramter Pn"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Set your UTM-parameter">
-    **Recommendation:** \
-    By checking **“Use for all accounts,”** the setting will be applied to all your accounts, so you don’t have to configure them one by one.
+  <Step title="Set the UTM parameters" titleSize="h4">
+    Enter the UTM string you want Adtool to use for launched ads.
 
-    When you use **“Use for all accounts,”** it will override any customizations already made in other account settings for UTM-parameters.
+    Enable `Use for all accounts` only if the same UTM setup should replace the saved setup on your other accounts.
 
     <img
       src="/images/select_utm-paramter(1).png"
-      alt="Select Utm Paramter(1) Pn"
+      alt="UTM parameter field and Use for all accounts option"
       title="Select Utm Paramter(1) Pn"
       style={{ width:"100%" }}
     />
   </Step>
 </Steps>
 
-### Example:
+## Recommended setup
 
-Below, you can see an example of a UTM parameter.
+Use a consistent structure that identifies the platform, traffic type, campaign, ad set, and ad. A typical setup is:
 
+```text
+utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_term={{adset.name}}&utm_content={{ad.name}}
 ```
-utmsource=facebook&utm_medium=social&utm_campaign={{campaign.name}}&utm_term={{adset.name}}&utm_content={{ad.name}}\_
-```
+
+| **Parameter** | **Typical purpose** |
+| --- | --- |
+| `utm_source` | Identifies the traffic source, such as `facebook`. |
+| `utm_medium` | Identifies the channel or traffic type, such as `paid_social`. |
+| `utm_campaign` | Identifies the campaign. Dynamic values can use `{{campaign.name}}`. |
+| `utm_term` | Often used for the ad set. Dynamic values can use `{{adset.name}}`. |
+| `utm_content` | Often used for the ad. Dynamic values can use `{{ad.name}}`. |
+
+## Before you save
+
+Check these items before launch:
+
+| **Check** | **Why it matters** |
+| --- | --- |
+| Parameter names are spelled correctly | Analytics tools usually expect names like `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, and `utm_content`. |
+| Values use the right separators | Use `&` between parameters and `=` between each parameter name and value. |
+| Dynamic values match your reporting needs | `{{campaign.name}}`, `{{adset.name}}`, and `{{ad.name}}` make reporting easier when names are clear. |
+| `Use for all accounts` is intentional | It replaces account-specific UTM setups on other accounts. |
+
+## Common cases
+
+<Expandable title="I want one UTM setup for every account">
+  Enable `Use for all accounts`, confirm the UTM string is correct, and save. This applies the same UTM setup across accounts and overrides account-specific UTM settings.
+</Expandable>
+
+<Expandable title="I want a different UTM setup per ad account">
+  Select each ad account separately, keep `Use for all accounts` off, enter the UTM string for that account, and save.
+</Expandable>
+
+<Expandable title="My tracking does not look right after launch">
+  Check the saved UTM string for spelling, missing `&` separators, missing `=` characters, and whether the launched ads use URLs where UTM parameters are relevant.
+</Expandable>

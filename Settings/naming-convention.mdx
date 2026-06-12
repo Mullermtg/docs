@@ -1,121 +1,164 @@
 ---
-title: "How to set standard naming convention"
+title: "How to set a standard naming convention"
 sidebarTitle: "Custom naming convention"
-description: "In this document, we’ll show you how to set the default naming convention for your ads and provide examples of naming structures commonly used by our users."
+description: "Set the default ad naming convention for an ad account and understand the fields, separators, and account-level rules."
 ---
 
-### Video Guide
+Use a standard naming convention to define how Adtool should build ad names by default for an ad account. Use this page when you want launched ads to follow a predictable naming structure across batches.
 
-<iframe
-  src="https://www.youtube.com/embed/yF46Ah9B6eE"
-  title="YouTube video player"
-  frameBorder="0"
-  className="w-full aspect-video rounded-xl"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen
-/>
-### Step-by-step Guide
+## What this setting affects
+
+| **Setting** | **What it affects** |
+| --- | --- |
+| Selected ad account | The default ad naming convention for that account. |
+| Naming fields | The parts Adtool uses to build each ad name, such as date, file type, file name, and custom fields. |
+| Separators | The characters placed between naming fields. |
+| `Use for all accounts` | Applies the same naming convention across your accounts and replaces account-specific naming defaults. |
+
+## Step-by-step guide
 
 <Steps>
-  <Step title="Go to 'Settings'">
+  <Step title="Open Settings" titleSize="h4">
+    Go to `Settings`.
+
     <img
       src="/images/FB_IG_PAGE1.png"
-      alt="FB IG PAGE1 Pn"
+      alt="Settings page in Adtool"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Select the ad account for which the naming convention need to be changed.">
+  <Step title="Select the ad account" titleSize="h4">
+    Select the ad account where the naming convention should be changed.
+
     <img
       src="/images/Select_ad_accounts.png"
-      alt="Select Ad Accounts Pn"
+      alt="Ad account selector in Settings"
       style={{ width:"100%" }}
-      title=""
     />
   </Step>
-  <Step title="Scroll down to the section: 'Naming Convention'" iconType="solid">
-    Now you can start creating your standard naming convention for your ads.
+  <Step title="Find Naming Convention" iconType="solid" titleSize="h4">
+    Scroll to the `Naming Convention` section.
 
     <img
       src="/images/settings_naming-convention(1).png"
-      alt="Settings Naming Convention Pn"
+      alt="Naming Convention section in Settings"
       title="Settings Naming Convention Pn"
       style={{ width:"100%" }}
     />
-
-    ### What can you change from?
-
-    <AccordionGroup>
-      <Accordion title="File Type">
-        **Set custom labels for image and video file types in your naming convention.**
-
-        You can change the naming however you like.
-      </Accordion>
-      <Accordion title="File Name">
-        **If you choose the 'File Name', it will automatically add the name of the creative to the ad.**
-
-        **Example:**\
-        _Creative name_: launch_ads_fast-9x16.mp4\
-        _Ad name_: 10/28 | VID | Funnel | launch_ads_fast
-
-        **Recommendation:** Adjust the concept description before adding the creative to Adtool for more seamless ad naming.
-      </Accordion>
-      <Accordion title="Date">
-        **Choose how dates should be formatted in your ad naming convention.**
-
-        We will automatically add the date of when the ad is created within Adtool.
-
-        You can choose from a various of formats:
-
-        - DD/MM | 28/10
-        - MM/DD | 10/28
-        - YYYY-DD-MM | 2025-28-10
-        - YYYY-MM-DD | 2025-10-28
-        - DD-MM-YYYY | 28-10-2025
-        - MM-DD-YYYY | 10-28-2025
-        - MMM DD | Oct 28
-        - DD MMM | 28 Oct
-        - Week | Week 44
-      </Accordion>
-      <Accordion title="Custom Field">
-        Enter the static text that will be added to your ad names. This text will appear exactly as you type it in every ad name.
-
-        'Custom Field' can also be used to act as a placeholder. 
-
-        For example if you need Country in your ad names, we recommend to use 'Custom Field' to set a placeholder for our 'Find & Replace' function within 'Launch'
-      </Accordion>
-      <Accordion title="Seperators to choose from">
-        You can choose from a range of different separators.
-
-        - Pipe " | "
-        - Dash " - "
-        - Underscore " \_ "
-        - Space
-        - Comma " , "
-        - Dot " . "
-        - Tilde " ~ "
-        - Double Colon " :: "
-      </Accordion>
-    </AccordionGroup>
   </Step>
-  <Step title="Set your default naming convention">
-    **You can set naming convention as you prefer. These will be the default settings for the account.**
+  <Step title="Build the naming convention" titleSize="h4">
+    Add the fields and separators you want Adtool to use when creating ad names.
 
-    **Note:** \
-    By checking **"Use for all accounts"** the setting will be applied to all your accounts, so you don’t have to configure them one by one.\
-    When you use **“Use for all accounts”** it will override any customizations already made in other account settings for UTM-parameters.
+    Enable `Use for all accounts` only if this naming convention should replace the saved naming convention on your other accounts.
   </Step>
 </Steps>
 
-### Examples of Naming Conventions
+## Naming fields
 
-**Example #1**\
-**Naming convention**: _Date (MM/DD) | CF | File Type (IMG/VID) | File Name_\
-**Ad Name example:** 10/28 | US | Awareness | VID | Hook 1 - Christian Dancing - 20% off focus
+<Expandable title="File Type">
+  Use `File Type` to add a label for whether the creative is an image or a video. You can set custom labels for image and video file types in your naming convention.
+</Expandable>
 
-**Example #2**\
-**Naming convention**: _Date (MM/DD) | CF | CF | File Type (IMG/VID) | File Name_\
-**Ad Name example:** 10/28 | US | Awareness | VID | Hook 1 - Christian Dancing - 20% off focus
+<Expandable title="File Name">
+  Use `File Name` to add the creative file name to the ad name.
 
-**Example #3**\
-**Naming convention**: _Week_CF_CF_File Type (IMG/VID)\_File Name_\
-**Ad Name example:** Week 44_DK_Sales_High-heels_VID_hook1-UGC-Walking-down-the-street
+  Example:
+
+  ```text
+  Creative name: launch_ads_fast-9x16.mp4
+  Ad name: 10/28 | VID | Funnel | launch_ads_fast
+  ```
+
+  For cleaner ad names, adjust the concept description or file name before adding the creative to Adtool.
+</Expandable>
+
+<Expandable title="Date">
+  Use `Date` to add the date when the ad is created within Adtool.
+
+  Available date formats include:
+
+  | **Format** | **Example** |
+  | --- | --- |
+  | `DD/MM` | `28/10` |
+  | `MM/DD` | `10/28` |
+  | `YYYY-DD-MM` | `2025-28-10` |
+  | `YYYY-MM-DD` | `2025-10-28` |
+  | `DD-MM-YYYY` | `28-10-2025` |
+  | `MM-DD-YYYY` | `10-28-2025` |
+  | `MMM DD` | `Oct 28` |
+  | `DD MMM` | `28 Oct` |
+  | `Week` | `Week 44` |
+</Expandable>
+
+<Expandable title="Custom Field">
+  Use `Custom Field` for static text that should appear exactly as entered in every ad name.
+
+  You can also use a `Custom Field` as a placeholder. For example, if you need country in your ad names, you can add a country placeholder and later adjust it with the `Find & Replace` function in `Launch`.
+</Expandable>
+
+<Expandable title="Separators">
+  Choose the separator placed between naming fields.
+
+  | **Separator** | **How it appears** |
+  | --- | --- |
+  | Pipe | Vertical bar between fields |
+  | Dash | Dash between fields |
+  | Underscore | Underscore between fields |
+  | Space | Blank space between fields |
+  | Comma | Comma between fields |
+  | Dot | Dot between fields |
+  | Tilde | Tilde between fields |
+  | Double colon | Double colon between fields |
+</Expandable>
+
+## Before you save
+
+Check these items before saving the default:
+
+| **Check** | **Why it matters** |
+| --- | --- |
+| Correct ad account selected | The naming convention applies to the selected account unless `Use for all accounts` is enabled. |
+| Naming fields are in the right order | Ad names are built from the fields in the order you set. |
+| Custom fields are final or intentional placeholders | Static custom fields appear exactly as entered unless changed later. |
+| `Use for all accounts` is intentional | It replaces custom naming conventions already set on other accounts. |
+
+## Examples of naming conventions
+
+**Example 1**
+
+```text
+Naming convention: Date (MM/DD) | CF | File Type (IMG/VID) | File Name
+Ad name example: 10/28 | US | Awareness | VID | Hook 1 - Christian Dancing - 20% off focus
+```
+
+**Example 2**
+
+```text
+Naming convention: Date (MM/DD) | CF | CF | File Type (IMG/VID) | File Name
+Ad name example: 10/28 | US | Awareness | VID | Hook 1 - Christian Dancing - 20% off focus
+```
+
+**Example 3**
+
+```text
+Naming convention: Week_CF_CF_File Type (IMG/VID)_File Name
+Ad name example: Week 44_DK_Sales_High-heels_VID_hook1-UGC-Walking-down-the-street
+```
+
+## Common cases
+
+<Expandable title="I want the same naming convention on every account">
+  Enable `Use for all accounts`, review the naming convention, and save. This applies the same default across accounts and overrides account-specific naming conventions.
+</Expandable>
+
+<Expandable title="I need to change one part of names during launch">
+  Use a `Custom Field` as a placeholder, then adjust the value with `Find & Replace` in `Launch` when you prepare the batch.
+</Expandable>
+
+<Expandable title="My ad names look too long">
+  Use fewer fields, shorten custom field values, or clean up creative file names before adding the creatives to Adtool.
+</Expandable>
+
+## Video guide
+
+<iframe src="https://www.youtube.com/embed/yF46Ah9B6eE" title="YouTube video player" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />

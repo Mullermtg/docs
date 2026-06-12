@@ -1,43 +1,83 @@
 ---
 title: "How to set standard Creative enhancements"
 sidebarTitle: "Standard creative enhancement"
-description: "In this document, we’ll show you how to set the default Creative Enhancement settings."
+description: "Set the default Creative enhancements for an ad account and understand when launch-level settings can override them."
 ---
 
-### Step-by-step Guide
+Use standard Creative enhancements to define the default enhancement setting Adtool should use for an ad account. Use this page when you want new launch batches to start with the same Creative enhancements setup, while still keeping the option to adjust a specific batch in `Launch`.
+
+## What this setting affects
+
+| **Setting** | **What it affects** |
+| --- | --- |
+| Selected ad account | The default Creative enhancements setting for that account. |
+| `Use for all accounts` | Applies the same Creative enhancements setting across your accounts and replaces account-specific defaults. |
+| `Additional Settings` in `Launch` | Lets you adjust Creative enhancements for a specific batch without changing the saved default. |
+
+<Note>
+  Creative enhancements set in `Settings` are defaults. If you change Creative enhancements inside `Launch` under `Additional Settings`, that change applies to the batch you are working on.
+</Note>
+
+## Step-by-step guide
 
 <Steps>
-  <Step title="Go to 'Settings'">
+  <Step title="Open Settings" titleSize="h4">
+    Go to `Settings`.
+
     <img
       src="/images/FB_IG_PAGE1.png"
-      alt="FB IG PAGE1 Pn"
+      alt="Settings page in Adtool"
       title="FB IG PAGE1 Pn"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Select the ad account for which the Creative Enhancements need to be changed.">
+  <Step title="Select the ad account" titleSize="h4">
+    Select the ad account where the default Creative enhancements setting should be changed.
+
     <img
       src="/images/Select_ad_accounts.png"
-      alt="Select Ad Accounts Pn"
+      alt="Ad account selector in Settings"
       title="Select Ad Accounts Pn"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Scroll down to the section: 'Creative Enhancement'">
+  <Step title="Find Creative Enhancement" titleSize="h4">
+    Scroll to the `Creative Enhancement` section.
+
     <img
       src="/images/select_creative-enhacement.png"
-      alt="Select Creative Enhacement Pn"
+      alt="Creative Enhancement section in Settings"
       title="Select Creative Enhacement Pn"
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Set your default creative enhancements">
-    **You can set the enhancements as you prefer. These will be the default settings for the account.**
+  <Step title="Set the default" titleSize="h4">
+    Choose the Creative enhancements setting you want Adtool to use by default for that ad account.
 
-    You can always adjust the enhancements for a specific batch under **“Additional Settings”** in **Launch.**
-
-    **Note:** \
-    By checking **“Use for all accounts,”** the setting will be applied to all your accounts, so you don’t have to configure them one by one.\
-    When you use **“Use for all accounts,”** it will override any customizations already made in other account settings for UTM-parameters.
+    If you want the same default across all accounts, enable `Use for all accounts` before saving.
   </Step>
 </Steps>
+
+## Before you save
+
+Check these items before you save the setting:
+
+| **Check** | **Why it matters** |
+| --- | --- |
+| Correct ad account selected | The setting applies to the selected account unless `Use for all accounts` is enabled. |
+| `Use for all accounts` is intentional | It replaces custom Creative enhancements defaults already set on other accounts. |
+| Batch-level exceptions are expected | Use `Additional Settings` in `Launch` when only one batch needs a different setup. |
+
+## Common cases
+
+<Expandable title="I want the same Creative enhancements setting on every account">
+  Enable `Use for all accounts`, review the selected setting, and save. This applies the same default across accounts and overrides account-specific defaults.
+</Expandable>
+
+<Expandable title="I only want to change one account">
+  Select the ad account, leave `Use for all accounts` off, update the Creative enhancements setting, and save.
+</Expandable>
+
+<Expandable title="I only want to change one launch batch">
+  Do not change the account default in `Settings`. Go to `Launch`, open `Additional Settings`, and adjust Creative enhancements for that batch.
+</Expandable>
