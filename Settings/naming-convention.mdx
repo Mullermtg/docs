@@ -4,21 +4,25 @@ sidebarTitle: "Custom naming convention"
 description: "Set the default ad naming convention for an ad account and understand the fields, separators, and account-level rules."
 ---
 
-Use a standard naming convention to define how Adtool should build ad names by default for an ad account. Use this page when you want launched ads to follow a predictable naming structure across batches.
+Use a standard naming convention to control how Adtool builds ad names when ads are created. Naming conventions can be adjusted at two levels: across the organization through `Default settings`, or for a selected ad account when one account needs its own naming structure.
+
+Use this page when you want launched ads to follow a predictable naming structure across batches.
 
 ## What this setting affects
 
 | **Setting** | **What it affects** |
 | --- | --- |
-| Selected ad account | The default ad naming convention for that account. |
-| Naming fields | The parts Adtool uses to build each ad name, such as date, file type, file name, and custom fields. |
+| Organization-wide adjustment | The default naming convention used across your organization through `Default settings`. |
+| Selected ad account adjustment | The naming convention used for one specific ad account. |
+| Naming fields | The parts Adtool uses to build each ad name, such as date, filename, ad type, and custom fields. |
+| Field order | The sequence Adtool follows when combining fields into the final ad name. |
 | Separators | The characters placed between naming fields. |
-| `Use for all accounts` | Applies the same naming convention across your accounts and replaces account-specific naming defaults. |
+| Custom labels and values | The exact text Adtool writes for custom fields and configurable field labels, such as ad type labels. |
 
 ## Step-by-step guide
 
 <Steps>
-  <Step title="Open Settings" titleSize="h4">
+  <Step title="Go to Settings" titleSize="h4">
     Go to `Settings`.
 
     <img
@@ -27,67 +31,54 @@ Use a standard naming convention to define how Adtool should build ad names by d
       style={{ width:"100%" }}
     />
   </Step>
-  <Step title="Select the ad account" titleSize="h4">
-    Select the ad account where the naming convention should be changed.
+  <Step title="Choose where the naming convention should apply" titleSize="h4">
+    Select `Default settings` to adjust the organization-wide naming convention, or select an ad account to adjust the naming convention for that specific ad account.
 
-    <img
-      src="/images/Select_ad_accounts.png"
-      alt="Ad account selector in Settings"
-      style={{ width:"100%" }}
-    />
+    <Frame>
+      ![Settings Select Ad Account](/images/settings_select_ad-account.png)
+    </Frame>
   </Step>
   <Step title="Find Naming Convention" iconType="solid" titleSize="h4">
     Scroll to the `Naming Convention` section.
 
-    <img
-      src="/images/settings_naming-convention(1).png"
-      alt="Naming Convention section in Settings"
-      title="Settings Naming Convention Pn"
-      style={{ width:"100%" }}
-    />
+    <Frame>
+      ![Setting Naming Convention in settings](/images/settings_naming_convention.png)
+    </Frame>
   </Step>
   <Step title="Build the naming convention" titleSize="h4">
-    Add the fields and separators you want Adtool to use when creating ad names.
-
-    Enable `Use for all accounts` only if this naming convention should replace the saved naming convention on your other accounts.
+    Add the fields, field order, separators, and custom labels or values you want Adtool to use when creating ad names.
   </Step>
 </Steps>
 
+## What you can set in a naming convention
+
+| **Option** | **What it controls** |
+| --- | --- |
+| Fields | The values included in the ad name, such as filename, ad type, date, and custom fields. |
+| Order | The sequence of fields in the final ad name. |
+| Separators | The characters between fields, such as pipes, dashes, underscores, spaces, commas, dots, tildes, or double colons. |
+| Custom labels and values | Static text or configurable labels that should appear in the ad name exactly as you define them. |
+
 ## Naming fields
 
-<Expandable title="File Type">
-  Use `File Type` to add a label for whether the creative is an image or a video. You can set custom labels for image and video file types in your naming convention.
+<Expandable title="Filename">
+  Use `Filename` to add the uploaded creative file name to the ad name. This is useful when each creative needs a dynamic identifier in the final ad name.
+
+  If your filenames are structured well, `Filename` can make ad names highly specific and easier to distinguish across a batch.
+
+  | **Creative filename** | **Ad name** |
+  | --- | --- |
+  | launch\_ads\_fast-9x16.mp4 | 10/28 \| VID \| Funnel \| launch\_ads\_fast |
 </Expandable>
 
-<Expandable title="File Name">
-  Use `File Name` to add the creative file name to the ad name.
+<Expandable title="Ad type">
+  Use `Ad type` to identify the type of ad Adtool is creating. It can identify image ads, video ads, flex ads, carousel ads, partnership ads, and organic ads.
 
-  Example:
-
-  ```text
-  Creative name: launch_ads_fast-9x16.mp4
-  Ad name: 10/28 | VID | Funnel | launch_ads_fast
-  ```
-
-  For cleaner ad names, adjust the concept description or file name before adding the creative to Adtool.
+  You can customize what each ad type writes into the ad name. For example, you can use `img` for image ads, `vid` for video ads, or another label that matches your team's naming style.
 </Expandable>
 
 <Expandable title="Date">
-  Use `Date` to add the date when the ad is created within Adtool.
-
-  Available date formats include:
-
-  | **Format** | **Example** |
-  | --- | --- |
-  | `DD/MM` | `28/10` |
-  | `MM/DD` | `10/28` |
-  | `YYYY-DD-MM` | `2025-28-10` |
-  | `YYYY-MM-DD` | `2025-10-28` |
-  | `DD-MM-YYYY` | `28-10-2025` |
-  | `MM-DD-YYYY` | `10-28-2025` |
-  | `MMM DD` | `Oct 28` |
-  | `DD MMM` | `28 Oct` |
-  | `Week` | `Week 44` |
+  Use `Date` to add the date when the ad is created in Adtool. You can choose from several date formats so the date matches your desired naming style.
 </Expandable>
 
 <Expandable title="Custom Field">
@@ -113,42 +104,40 @@ Use a standard naming convention to define how Adtool should build ad names by d
 
 ## Before you save
 
-Check these items before saving the default:
+Check these items before saving the naming convention:
 
 | **Check** | **Why it matters** |
 | --- | --- |
-| Correct ad account selected | The naming convention applies to the selected account unless `Use for all accounts` is enabled. |
+| Correct settings level selected | `Default settings` changes the organization-wide naming convention. A selected ad account changes only that account's naming convention. |
 | Naming fields are in the right order | Ad names are built from the fields in the order you set. |
+| Filename behavior is intentional | Structured filenames can make each ad name more specific across a batch. Messy filenames can make ad names harder to scan. |
+| Ad type labels match your system | Custom ad type labels let you decide what image, video, flex, carousel, partnership, and organic ads write into the ad name. |
 | Custom fields are final or intentional placeholders | Static custom fields appear exactly as entered unless changed later. |
-| `Use for all accounts` is intentional | It replaces custom naming conventions already set on other accounts. |
 
 ## Examples of naming conventions
 
-**Example 1**
-
-```text
-Naming convention: Date (MM/DD) | CF | File Type (IMG/VID) | File Name
-Ad name example: 10/28 | US | Awareness | VID | Hook 1 - Christian Dancing - 20% off focus
-```
-
-**Example 2**
-
-```text
-Naming convention: Date (MM/DD) | CF | CF | File Type (IMG/VID) | File Name
-Ad name example: 10/28 | US | Awareness | VID | Hook 1 - Christian Dancing - 20% off focus
-```
-
-**Example 3**
-
-```text
-Naming convention: Week_CF_CF_File Type (IMG/VID)_File Name
-Ad name example: Week 44_DK_Sales_High-heels_VID_hook1-UGC-Walking-down-the-street
-```
+| **Naming convention** | **Ad name** | **Example** |
+| --- | --- | --- |
+| Date (MM/DD) \| CF \| Ad type (IMG/VID) \| File Name | 10/28 \| US \| Awareness \| VID \| Hook 1 - Christian Dancing - 20% off focus | Useful when you want date, market or campaign context, ad type, and filename in each ad name. |
+| Date (MM/DD) \| CF \| CF \| Ad type (IMG/VID) \| File Name | 10/28 \| US \| Awareness \| VID \| Hook 1 - Christian Dancing - 20% off focus | Useful when you need multiple custom values before the ad type and filename. |
+| Week\_CF\_CF\_Ad type (IMG/VID)\_File Name | Week 44\_DK\_Sales\_High-heels\_VID\_hook1-UGC-Walking-down-the-street | Useful when your team prefers underscore-separated names with week, market, funnel or offer context, ad type, and filename. |
 
 ## Common cases
 
-<Expandable title="I want the same naming convention on every account">
-  Enable `Use for all accounts`, review the naming convention, and save. This applies the same default across accounts and overrides account-specific naming conventions.
+<Expandable title="I want the same naming convention across the organization">
+  Select `Default settings`, review the naming fields, order, separators, and custom labels, then save. This sets the organization-wide naming convention.
+</Expandable>
+
+<Expandable title="I want one ad account to use a different naming convention">
+  Select the ad account, adjust the naming fields, order, separators, and custom labels, then save. This changes the naming convention for that selected ad account.
+</Expandable>
+
+<Expandable title="I need each creative or ad to be easy to identify">
+  Add `Filename` to the naming convention. Structured filenames can make each ad name more specific and easier to distinguish across a batch.
+</Expandable>
+
+<Expandable title="I need ad type labels that match my team's system">
+  Add `Ad type`, then customize the labels Adtool writes for image ads, video ads, flex ads, carousel ads, partnership ads, and organic ads.
 </Expandable>
 
 <Expandable title="I need to change one part of names during launch">
@@ -156,7 +145,7 @@ Ad name example: Week 44_DK_Sales_High-heels_VID_hook1-UGC-Walking-down-the-stre
 </Expandable>
 
 <Expandable title="My ad names look too long">
-  Use fewer fields, shorten custom field values, or clean up creative file names before adding the creatives to Adtool.
+  Use fewer fields, shorten custom field values, or clean up creative filenames before adding the creatives to Adtool.
 </Expandable>
 
 ## Video guide
