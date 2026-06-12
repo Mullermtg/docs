@@ -1,48 +1,59 @@
 ---
-title: "My ads launched succesfully, but I can't see my ads"
-sidebarTitle: "Can't see my ads after successful launch"
-description: "In this document, we’ll show you how to view your ads if they launched successfully but don’t appear when you click “Open Ads”."
+title: "Can't see ads after a successful launch"
+sidebarTitle: "Can't see ads after launch"
+description: "Use Meta Ads Manager's ad set view to refresh launched ads that are not visible immediately after a successful Adtool launch."
 ---
 
-**Meta can sometimes be slow to load the cache when launching ads. In rare cases, after clicking “Launch,” the ads may show as “Success,” but when you click “Open Ads,” you might not be able to see them.**
+Use this guide when a batch launched successfully in Adtool, but the ads do not appear right away in Meta Ads Manager. This is usually a Meta Ads Manager cache or visibility issue, not a failed launch.
 
-Below, we’ll show you how to view the ads you just launched:
+A successful Adtool launch can take a moment to appear in Meta Ads Manager. Do not relaunch only because Meta has not refreshed yet, since that can create duplicate ads.
 
-### Step-by-step Guide
+## Open the launched ads from Adtool
 
-<Steps>
-  <Step title="Click 'open ads' in the batch history overview">
-    <img
-      src="/images/open_ads.png"
-      alt="Open Ads Pn"
-      title="Open Ads Pn"
-      style={{ width:"55%" }}
-    />
-  </Step>
-  <Step title="Not seeing the ads after launch? - go to 'Ad sets'">
-    <img
-      src="/images/meta_ads_missing.png"
-      alt="Meta Ads Missing Pn"
-      title="Meta Ads Missing Pn"
-      style={{ width:"55%" }}
-    />
-  </Step>
-  <Step title="Click “Edit” on the ad set">
-    <img
-      src="/images/click_edit_ad_set.png"
-      alt="Click Edit Ad Set Pn"
-      title="Click Edit Ad Set Pn"
-      style={{ width:"55%" }}
-    />
-  </Step>
-  <Step title="Now you are able to see your ads">
-    Now you should now be able to see them. When you go back to the overview, you’ll typically notice that they’re also visible there.
+1. Go to the batch history overview in Adtool.
+2. Click `Open Ads` on the successfully launched batch.
 
-    <img
-      src="/images/editing_ad_set.png"
-      alt="Editing Ad Set Pn"
-      title="Editing Ad Set Pn"
-      style={{ width:"55%" }}
-    />
-  </Step>
-</Steps>
+<img
+  src="/images/open_ads.png"
+  alt="Adtool batch history with the Open Ads button for a launched batch"
+  title="Open Ads button in batch history"
+  style={{ width: "55%" }}
+/>
+
+## Refresh the view in Meta Ads Manager
+
+1. In Meta Ads Manager, switch to the `Ad sets` view.
+2. Find the ad set that contains the ads from your launch.
+3. Open or edit the relevant ad set.
+
+<img
+  src="/images/meta_ads_missing.png"
+  alt="Meta Ads Manager showing the Ad sets view when launched ads are not visible"
+  title="Meta Ads Manager Ad sets view"
+  style={{ width: "55%" }}
+/>
+
+<img
+  src="/images/click_edit_ad_set.png"
+  alt="Meta Ads Manager with the Edit option for the relevant ad set"
+  title="Edit ad set in Meta Ads Manager"
+  style={{ width: "55%" }}
+/>
+
+## Check the ads again
+
+After opening the ad set, return to the ads overview in Meta Ads Manager. The ads will usually appear after Meta refreshes the view.
+
+<img
+  src="/images/editing_ad_set.png"
+  alt="Meta Ads Manager ad set editor showing the launched ads after the view refreshes"
+  title="Launched ads visible in Meta Ads Manager"
+  style={{ width: "55%" }}
+/>
+
+## If the ads are still missing
+
+1. Confirm that Meta Ads Manager is using the same ad account as the Adtool launch.
+2. Check campaign, ad set, status, and date filters in Meta Ads Manager.
+3. Wait briefly, then refresh Meta Ads Manager again.
+4. If the ads still do not appear, contact support with the batch name and launch time.
