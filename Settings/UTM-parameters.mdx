@@ -1,55 +1,141 @@
 ---
-title: "How to set UTM-parameters"
-sidebarTitle: "UTM-parameters"
-description: "In this document, we're gonna show you how you can set UTM-paramters for all your accounts or individually."
+title: "How to set UTM parameters"
+sidebarTitle: "UTM parameters"
+description: "Set default UTM tracking for one ad account or all accounts so launched ads use the right URL parameters."
 ---
 
-### Step-by-step Guide
+Use UTM parameters to add tracking values to ads launched through Adtool. Defaults can be set at three layers: organization-wide default, selected ad account default, and batch-level override.
+
+UTMs help analytics tools identify where traffic came from, which campaign generated it, and which ad or ad set was clicked. In Adtool, saved UTM defaults are applied when ads are prepared for launch, unless you adjust the UTM parameters for a specific batch.
+
+## How the default layers work
+
+| **Layer** | **Where it is set** | **What it affects** |
+| --- | --- | --- |
+| Organization-wide default | `Settings` → `Default settings` → `UTM parameters` | Applies across all current and future ad accounts in the organization after saving. |
+| Selected ad account default | `Settings` → select an ad account → `UTM parameters` | Applies only to the selected ad account after saving. It overrides the organization-wide default for that selected account. |
+| Batch-level override | `Launch` → `Additional settings` while creating a batch | Changes UTM parameters only for the current batch. It does not change saved organization-wide or selected ad account defaults. |
+
+## Set the organization-wide default
+
+Use the organization-wide default when every current and future ad account in the organization should start with the same UTM setup.
 
 <Steps>
-  <Step title="Go to 'Settings'">
-    <img
-      src="/images/FB_IG_PAGE1.png"
-      alt="FB IG PAGE1 Pn"
-      title="FB IG PAGE1 Pn"
-      style={{ width:"100%" }}
-    />
-  </Step>
-  <Step title="Select the ad account for which the UTM parameters need to be changed.">
-    <img
-      src="/images/Select_ad_accounts.png"
-      alt="Select Ad Accounts Pn"
-      title="Select Ad Accounts Pn"
-      style={{ width:"100%" }}
-    />
-  </Step>
-  <Step title="Scroll down to the section: 'UTM tracking'" iconType="regular">
-    <img
-      src="/images/select_utm-paramter.png"
-      alt="Select Utm Paramter Pn"
-      title="Select Utm Paramter Pn"
-      style={{ width:"100%" }}
-    />
-  </Step>
-  <Step title="Set your UTM-parameter">
-    **Recommendation:** \
-    By checking **“Use for all accounts,”** the setting will be applied to all your accounts, so you don’t have to configure them one by one.
+  <Step title="Open Settings" titleSize="h4">
+    Go to `Settings` in the left navigation bar.
 
-    When you use **“Use for all accounts,”** it will override any customizations already made in other account settings for UTM-parameters.
+    <Frame>
+      ![Open Settings](/images/open_settings.png)
+    </Frame>
+  </Step>
+  <Step title="Open Default settings" titleSize="h4">
+    In the left navigation bar, find the same section where ad accounts are selected. Click the top option, `Default settings`.
+  </Step>
+  <Step title="Find UTM parameters" iconType="regular" titleSize="h4">
+    Find the `UTM parameters` section.
 
-    <img
-      src="/images/select_utm-paramter(1).png"
-      alt="Select Utm Paramter(1) Pn"
-      title="Select Utm Paramter(1) Pn"
-      style={{ width:"100%" }}
-    />
+    <Frame>
+      ![Org Set Utm Paramter](/images/org_set_utm-paramter.png)
+    </Frame>
+  </Step>
+  <Step title="Set the organization-wide default" titleSize="h4">
+    Enter the UTM string you want Adtool to use, then save the page/settings. When saved here, the default applies across all current and future ad accounts in the organization.
   </Step>
 </Steps>
 
-### Example:
+## Set the selected ad account default
 
-Below, you can see an example of a UTM parameter.
+Use the selected ad account default when one selected account should use a different UTM setup than the organization-wide default.
 
+<Steps>
+  <Step title="Open Settings" titleSize="h4">
+    Go to `Settings` in the left navigation bar.
+  </Step>
+  <Step title="Select the ad account" titleSize="h4">
+    In the left navigation bar, find the section where ad accounts are selected. Choose the ad account you want to adjust instead of `Default settings`.
+
+    <Frame>
+      ![Settings Select Ad Account](/images/settings_select_ad-account.png)
+    </Frame>
+  </Step>
+  <Step title="Find UTM parameters" iconType="regular" titleSize="h4">
+    Find the `UTM parameters` section.
+  </Step>
+  <Step title="Set the selected ad account default" titleSize="h4">
+    Enter the UTM string for that selected account, then save the page/settings. When saved here, the selected ad account default applies only to that account and overrides the organization-wide default for that selected account.
+  </Step>
+</Steps>
+
+## Change UTM parameters for one batch
+
+Use the batch-level override when only the batch you are creating should use a different UTM setup.
+
+<Steps>
+  <Step title="Go to Launch" titleSize="h4">
+    Go to `Launch`.
+  </Step>
+  <Step title="Open Additional settings" titleSize="h4">
+    While creating a batch, open `Additional settings`.
+
+    <Frame>
+      <img
+        src="/images/go_to_launch_additional-settings.png"
+        alt="Open Settings"
+        lightAlt="Open Settings"
+        darkAlt="Open Settings"
+      />
+    </Frame>
+  </Step>
+  <Step title="Change UTM parameters for the batch" titleSize="h4">
+    Adjust the UTM parameters for that batch.
+  </Step>
+</Steps>
+
+Changing UTM parameters at batch level does not change the saved organization-wide or selected ad account defaults. It only changes the batch being created at that moment.
+
+## What are UTM parameters
+
+UTM parameters are tracking parameters added to ad URLs. They help teams identify where traffic came from, which campaign or ad generated it, and how performance should be grouped in analytics tools.
+
+Common UTM fields include:
+
+| **Parameter** | **What it describes** |
+| --- | --- |
+| `utm_source` | The traffic source or platform, such as `facebook` or `tiktok`. |
+| `utm_medium` | The traffic type or channel, such as `paid_social`. |
+| `utm_campaign` | The campaign, launch, market, or naming structure. Dynamic values can use `{{campaign.name}}`. |
+| `utm_term` | Ad set-level detail when your analytics structure uses it. Dynamic values can use `{{adset.name}}`. |
+| `utm_content` | Creative or ad-level detail. Dynamic values can use `{{ad.name}}`. |
+
+For example, a customer could use values like this:
+
+```text
+utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_term={{adset.name}}&utm_content={{ad.name}}
 ```
-utmsource=facebook&utm_medium=social&utm_campaign={{campaign.name}}&utm_term={{adset.name}}&utm_content={{ad.name}}\_
-```
+
+This is only an example of one possible structure, not an Adtool recommendation. Use the values that match your own analytics setup and reporting conventions.
+
+## Before you save
+
+Check these items before saving defaults or launching a batch:
+
+| **Check** | **Why it matters** |
+| --- | --- |
+| You are editing the right layer | Organization-wide defaults affect all current and future ad accounts, selected ad account defaults affect one selected account, and batch-level overrides affect only the current batch. |
+| Parameter names are spelled correctly | Analytics tools usually expect names like `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, and `utm_content`. |
+| Values use the right separators | Use `&` between parameters and `=` between each parameter name and value. |
+| Dynamic values match your reporting needs | `{{campaign.name}}`, `{{adset.name}}`, and `{{ad.name}}` make reporting easier when names are clear. |
+
+## Common cases
+
+<Expandable title="I want one UTM setup for every current and future account">
+  Set the organization-wide default from `Settings` → `Default settings` → `UTM parameters`.
+</Expandable>
+
+<Expandable title="I want a different UTM setup for one selected account">
+  Go to `Settings`, select the ad account you want to adjust, and update `UTM parameters` for that selected account.
+</Expandable>
+
+<Expandable title="I only want to change one launch batch">
+  Do not change the saved defaults in `Settings`. Go to `Launch`, open `Additional settings`, and adjust UTM parameters for that batch.
+</Expandable>
