@@ -34,7 +34,8 @@
                   "Launch/launching-carousel-ads",
                   "Launch/partnership-ads",
                   "Launch/multi-language-ads",
-                  "Launch/launching-flexible-ads"
+                  "Launch/launching-flexible-ads",
+                  "Launch/launch-organic-posts"
                 ]
               },
               {
@@ -50,7 +51,6 @@
                   "Launch/bulk-edit-ad-names",
                   "Launch/work-effectively-with-relaunch-function",
                   "Launch/adjust-additional-settings",
-                  "Launch/launch-organic-posts",
                   "Launch/save-as-draft",
                   "Launch/schedule-ads",
                   "Launch/preview-link"
