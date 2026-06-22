@@ -1,60 +1,87 @@
 ---
 title: "How to set ad defaults"
-description: "Set the default CTA, website link, and ad status Adtool should use when new launch batches are created."
+description: "Set organization-wide ad defaults and selected ad account defaults for CTA, ad status, and website link."
 sidebarTitle: "Ad defaults"
 ---
 
-Use ad defaults to make every new launch batch start with the settings your team normally uses. This helps keep launches consistent by pre-filling the website link, selecting the preferred CTA when possible, and deciding whether ads should launch as active or inactive by default.
+Use ad defaults to make new launch batches start with the settings your team normally uses. Adtool has two default layers: organization-wide default settings and selected ad account settings.
 
-Ad defaults are useful when your team normally sends traffic to the same website, uses the same call to action, or wants new ads to launch in a predictable status.
+Organization-wide ad defaults set the baseline default CTA and default ad status for your workspace. Selected ad account defaults are more specific and can set the default ad status, default CTA, and default website link for one ad account. The default website link belongs to selected ad account settings only, so use the ad account layer when different ad accounts should send traffic to different websites.
 
-## What ad defaults control
+## How the default layers work
 
-| **Default** | **What it does** |
-| --- | --- |
-| Default website link | Adds the website link Adtool should use when creating new ads. |
-| Default CTA | Selects the preferred call to action when that CTA is available for the ad setup. |
-| Default ad status | Sets whether newly launched ads should be active or inactive by default. |
+| **Layer** | **Can adjust** | **Use it for** |
+| --- | --- | --- |
+| Organization-wide default settings | Default CTA and default ad status | The baseline CTA and launch status your team wants to use across ad accounts. |
+| Selected ad account settings | Default ad status, default CTA, and default website link | Account-specific defaults, especially when an ad account should use its own website link. |
+
+When a new launch batch is created, Adtool uses the most specific defaults available for the selected ad account. You can still adjust launch settings for an individual batch when needed.
 
 ## When to use ad defaults
 
 Use ad defaults when:
 
-- Most ads should send traffic to the same website.
 - Your team normally uses one preferred CTA.
 - You want ads to launch as inactive first, so they can be reviewed before going live.
 - You want ads to launch as active by default, so approved batches can start running immediately after launch.
+- A specific ad account should use a default website link.
 
-## Step-by-step guide
+## Set organization-wide ad defaults
 
 1. Go to Settings in the left navigation bar.
-2. Select the default settings or ad account settings you want to adjust.
+
+<Note>
+  Add screenshot here: Settings in the left navigation bar.
+</Note>
+
+2. In the ad account selector, choose Default settings.
+
+<Note>
+  Add screenshot here: Default settings selected in the ad account selector, with the ad defaults section visible.
+</Note>
+
 3. Find the ad defaults section.
-4. Add the default website link you want Adtool to use.
-5. Select the default CTA you want Adtool to apply when available.
+4. Select the default CTA Adtool should apply when available.
+5. Choose whether ads should launch as active or inactive by default.
+6. Save your changes.
+
+## Set selected ad account ad defaults
+
+1. Go to Settings in the left navigation bar.
+2. In the ad account selector, choose the ad account you want to configure.
+
+<Note>
+  Add screenshot here: A selected ad account settings page, with default CTA, default ad status, and default website link visible.
+</Note>
+
+3. Find the ad defaults section.
+4. Add the default website link Adtool should use for this ad account.
+5. Select the default CTA Adtool should apply when available.
 6. Choose whether ads should launch as active or inactive by default.
 7. Save your changes.
 
-<Note>
-  Add screenshot here: Settings page showing where to set default CTA, website link, and ad status.
-</Note>
-
 ## How each default works
-
-### Default website link
-
-The default website link is the website link Adtool should use when creating new ads.
 
 ### Default CTA
 
-The default CTA is the preferred call to action Adtool should select when that CTA is available for the ad setup.
+The default CTA is the preferred call to action Adtool selects when that CTA is available for the ad setup.
 
 ### Default ad status
 
 The default ad status controls whether newly launched ads should be active or inactive by default.
 
+### Default website link
+
+The default website link is the website link Adtool should use when creating new ads for a selected ad account. It is configured on selected ad account settings, not on organization-wide default settings.
+
 ## Recommendation
 
 If your team reviews ads before they go live, set the default ad status to inactive. If your workflow is built around launching approved batches immediately, set the default ad status to active.
 
-For the website link and CTA, choose the values your team uses most often. This keeps launch setup faster while still allowing batch-specific changes when needed.
+For CTA and website link defaults, choose the values your team uses most often. Use organization-wide defaults for shared CTA and status preferences, and selected ad account defaults when an individual ad account needs its own CTA, status, or website link.
+
+## Video guide
+
+<Note>
+  Add video or GIF here: A short walkthrough showing where to find organization-wide and selected ad account ad defaults.
+</Note>
