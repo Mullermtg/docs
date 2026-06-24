@@ -19,8 +19,10 @@ Two naming patterns work:
 | --- | --- |
 | Card marker | The file name must contain `card` (or `kort`) followed by a number, separated by a space, underscore, or hyphen. A marker hidden inside another word, like `scorecard2`, is ignored. |
 | Card count | A carousel needs at least 2 different card numbers, up to a maximum of 10. |
-| Placements per card | Each card can hold a story (`9x16`) and a feed (`1x1`, `4x5`) version. Horizontal formats are not used in carousel cards. |
+| Placements per card | Each card can hold a story (`9x16`) and a feed (`1x1`, `4x5`) version. |
 | One media type | A carousel is all images or all videos. A file of the other type is left out of the carousel instead of breaking it. |
+
+### Build multiple carousels in one batch
 
 To build several carousels in one batch, give each carousel its own base name with the shared-name pattern — `summer_sale_card_1`, `summer_sale_card_2` and `winter_sale_card_1`, `winter_sale_card_2` become two separate carousels. The card-number-plus-name pattern pools everything into a single carousel, so use it for one carousel at a time.
 
@@ -35,7 +37,7 @@ If your files are not named with card markers, build the carousel by hand on the
     Go to `Launch` and click `Select Creatives`. Select the creatives you want to use as cards, then click `Continue`.
   </Step>
   <Step title="Create a carousel group" titleSize="h4">
-    In the `Groups` panel, click `Carousel Ad` to create a carousel group. `Placement Group` creates a standard placement ad and `Flex Ad` creates a flexible ad.
+    In the `Groups` panel, click `Carousel Ad` to create a carousel group.
   </Step>
   <Step title="Add the cards in order" titleSize="h4">
     Drag the creatives into the carousel group in the order the cards should appear. If a card has both a story and a feed version, add both to the same card. Click `Ungroup All` first if you want to redo an automatic grouping.

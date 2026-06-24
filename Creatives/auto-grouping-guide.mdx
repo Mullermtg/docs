@@ -105,16 +105,46 @@ An auto-group can contain 2 or 3 creatives. It cannot contain more than 3 creati
 
 ## Carousel cards
 
-Adtool can also build carousel ads automatically from your file names. When the names include a card marker such as `card 1`, `card 2`, Adtool groups those creatives into one carousel, where each card can hold its own placement versions.
+Adtool can also build carousel ads automatically from your file names. A carousel is a single ad made of several cards that people swipe through. When your file names include a card marker, Adtool works out which creatives are cards, which carousel they belong to, and what order they appear in — so naming files well removes almost all manual grouping.
+
+### Card markers
+
+A card marker is the word `card` (or Danish `kort`) followed by a number, such as `card 1`, `card 2`, `card 3`. Adtool uses it to recognize a creative as a carousel card and to set the card order.
+
+- The marker must stand on its own, separated by a space, underscore, or hyphen: `card 1`, `card_2`, `card-3`.
+- A marker hidden inside another word is ignored, so `scorecard2`, `cardigan`, and `discard_3` are not treated as cards.
+- Card numbers do not have to be in sequence. `card 2` and `card 5` still form a two-card carousel, ordered by number.
+
+### Carousel rules
 
 | **Rule** | **Detail** |
 | --- | --- |
-| Card marker | The file name must contain `card` (or `kort`) followed by a number, separated by a space, underscore, or hyphen. A marker hidden inside another word, like `scorecard2`, is ignored. |
-| Naming patterns | Shared name plus card number (`summer_sale_card_1_9x16`, `summer_sale_card_2_9x16`), or card number plus a per-card name (`card 1 summer 1x1`, `card 2 winter 1x1`). |
-| Card count | A carousel needs at least 2 cards and supports up to 10. |
-| Placements per card | Each card can hold a story (`9x16`) and a feed (`1x1`, `4x5`) version. Horizontal formats are not used in carousel cards. |
-| One media type | A carousel is all images or all videos. |
+| Card count | A carousel needs at least 2 cards and supports up to 10. Cards beyond the 10th are left ungrouped. |
+| Placements per card | Each card can hold a story (`9x16`) and a feed (`1x1`, `4x5`) version. Add the placement tag after the card marker, like `card_1_9x16`. Horizontal formats are not used in carousel cards. |
+| One media type | A carousel is all images or all videos. A file of the other type is left out instead of breaking the carousel. |
+| Priority | Carousel grouping runs before placement grouping, so a creative that lands in a carousel is not also grouped by placement. |
 
-Each base name that spans two or more cards becomes its own carousel, so you can build several carousels in one batch by giving each a distinct base name.
+### How files are matched to a carousel
 
-Carousel grouping takes priority over placement grouping, so a creative that lands in a carousel is not also grouped by placement. For the full carousel workflow, including manual grouping, see [Carousel grouping](/Launch/carousel-grouping).
+Adtool decides which cards belong to the same carousel from the **base name** — the file name with the card marker and placement tag removed. Files that share a base name and span two or more card numbers form one carousel.
+
+| **File name** | **Base name** | **Card** | **Placement** |
+| --- | --- | --- | --- |
+| `summer_sale_card_1_9x16.jpg` | `summer_sale` | 1 | Story / Reel |
+| `summer_sale_card_1_1x1.jpg` | `summer_sale` | 1 | Feed |
+| `summer_sale_card_2_9x16.jpg` | `summer_sale` | 2 | Story / Reel |
+
+### Naming scenarios
+
+Use the base name to control how many carousels you get: give one carousel a single consistent base name, and give separate carousels different base names.
+
+| **What you want** | **How to name the files** | **Result** |
+| --- | --- | --- |
+| One carousel, one creative per card | `promo_card_1`, `promo_card_2`, `promo_card_3` | A single 3-card carousel. |
+| One carousel, multiple placements per card | `promo_card_1_9x16`, `promo_card_1_1x1`, `promo_card_2_9x16`, `promo_card_2_1x1` | A single 2-card carousel, each card with a story and feed version. |
+| Multiple carousels in one batch | `summer_card_1`, `summer_card_2` and `winter_card_1`, `winter_card_2` | Two separate carousels, one per base name. |
+| One carousel from per-card names | `card 1 summer`, `card 2 winter` | One carousel grouped by card number. Use this only when you want a single carousel. |
+
+To keep several carousels apart in the same batch, give each carousel its own consistent base name and number its cards (`summer_card_1`, `summer_card_2`). If you instead give every card a different descriptive name with no shared base, Adtool pools those single cards into one carousel — which is only what you want for a single carousel.
+
+For the full carousel workflow, including manual grouping, see [Carousel grouping](/Launch/carousel-grouping).
