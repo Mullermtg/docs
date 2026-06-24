@@ -44,8 +44,6 @@
                 "icon": "rocket",
                 "expanded": false,
                 "pages": [
-                  "Launch/grouping-creatives",
-                  "Launch/grouping-with-3-placement-groups",
                   "Launch/dublicate-campaigns",
                   "Launch/dublicate-ad-sets",
                   "Launch/customize-ads-individually",
@@ -58,14 +56,23 @@
                 ]
               },
               {
+                "group": "Creative Grouping",
+                "icon": "layer-group",
+                "pages": [
+                  "Launch/grouping-creatives",
+                  "Launch/grouping-with-3-placement-groups",
+                  "Launch/carousel-grouping",
+                  "Creatives/auto-grouping-guide"
+                ]
+              },
+              {
                 "group": "Creatives",
                 "icon": "image",
                 "expanded": false,
                 "pages": [
                   "Creatives/upload-creatives",
                   "Creatives/set-custom-thumbnails",
-                  "Creatives/tagging-your-creatives",
-                  "Creatives/auto-grouping-guide"
+                  "Creatives/tagging-your-creatives"
                 ]
               },
               {
