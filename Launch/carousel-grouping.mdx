@@ -1,0 +1,52 @@
+---
+title: "How to group carousel ads"
+sidebarTitle: "Carousel grouping"
+description: "Group creatives into carousel cards automatically with card naming, or build the carousel manually on the grouping screen."
+---
+
+Use carousel grouping when one ad should hold several cards that people swipe through. Each card can include its own placement versions, and you can build the carousel automatically with file naming or manually on the grouping screen.
+
+## Automatic grouping
+
+Adtool builds a carousel for you when your file names include a card marker such as `card 1`, `card 2`, `card 3`. When the naming is correct, the cards are grouped as soon as you reach the grouping screen.
+
+Two naming patterns work:
+
+- **Shared name \+ card number:** `summer_sale_card_1_9x16`, `summer_sale_card_2_9x16`
+- **Card number \+ per-card name:** `card 1 summer 1x1`, `card 2 winter 1x1`
+
+| **Rule** | **Detail** |
+| --- | --- |
+| Card marker | The file name must contain `card` (or `kort`) followed by a number, separated by a space, underscore, or hyphen. A marker hidden inside another word, like `scorecard2`, is ignored. |
+| Card count | A carousel needs at least 2 different card numbers, up to a maximum of 10. |
+| Placements per card | Each card can hold a story (`9x16`) and a feed (`1x1`, `4x5`) version. Horizontal formats are not used in carousel cards. |
+| One media type | A carousel is all images or all videos. A file of the other type is left out of the carousel instead of breaking it. |
+
+Carousel grouping takes priority over placement grouping, so a creative placed in a carousel is not also grouped by placement. For the full file-naming and placement-tag rules, see the [Auto-grouping guide](/Creatives/auto-grouping-guide).
+
+## Manual grouping
+
+If your files are not named with card markers, build the carousel by hand on the grouping screen.
+
+<Steps>
+  <Step title="Select the creatives" titleSize="h4">
+    Go to `Launch` and click `Select Creatives`. Select the creatives you want to use as cards, then click `Continue`.
+  </Step>
+  <Step title="Create a carousel group" titleSize="h4">
+    In the `Groups` panel, click `Carousel Ad` to create a carousel group. `Placement Group` creates a standard placement ad and `Flex Ad` creates a flexible ad.
+  </Step>
+  <Step title="Add the cards in order" titleSize="h4">
+    Drag the creatives into the carousel group in the order the cards should appear. If a card has both a story and a feed version, add both to the same card. Click `Ungroup All` first if you want to redo an automatic grouping.
+
+    <iframe src="https://www.youtube.com/embed/sry4CEptEwA?autoplay=1&mute=1&loop=1&playlist=sry4CEptEwA&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Grouping creatives for a carousel ad" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />
+  </Step>
+  <Step title="Continue to the ad details" titleSize="h4">
+    Click `Continue`, then fill out the ad information for the carousel.
+  </Step>
+</Steps>
+
+## Customize each card
+
+By default, the first headline applies to every card. To give each card its own text, click `Edit Individually`, then set the headline, description, and call to action for each card.
+
+<iframe src="https://www.youtube.com/embed/j0WYOCZSlnU?autoplay=1&mute=1&loop=1&playlist=j0WYOCZSlnU&playsinline=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3" title="Customizing carousel card text in Adtool" frameBorder="0" className="w-full aspect-video rounded-xl pointer-events-none" allow="autoplay; encrypted-media" aria-hidden="true" />

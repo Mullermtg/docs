@@ -1,6 +1,6 @@
 ---
 title: "How auto-grouping works"
-description: "Learn how Adtool automatically groups creatives that share the same base name and use different supported placements."
+description: "Learn how Adtool automatically groups creatives by placement and builds carousels from card naming."
 sidebarTitle: "Auto-grouping"
 ---
 
@@ -102,3 +102,17 @@ Adtool will not auto-group creatives when:
 ## Group size
 
 An auto-group can contain 2 or 3 creatives. It cannot contain more than 3 creatives.
+
+## Carousel cards
+
+Adtool can also build carousel ads automatically from your file names. When the names include a card marker such as `card 1`, `card 2`, Adtool groups those creatives into one carousel, where each card can hold its own placement versions.
+
+| **Rule** | **Detail** |
+| --- | --- |
+| Card marker | The file name must contain `card` (or `kort`) followed by a number, separated by a space, underscore, or hyphen. A marker hidden inside another word, like `scorecard2`, is ignored. |
+| Naming patterns | Shared name plus card number (`summer_sale_card_1_9x16`, `summer_sale_card_2_9x16`), or card number plus a per-card name (`card 1 summer 1x1`, `card 2 winter 1x1`). |
+| Card count | A carousel needs at least 2 cards and supports up to 10. |
+| Placements per card | Each card can hold a story (`9x16`) and a feed (`1x1`, `4x5`) version. Horizontal formats are not used in carousel cards. |
+| One media type | A carousel is all images or all videos. |
+
+Carousel grouping takes priority over placement grouping, so a creative that lands in a carousel is not also grouped by placement. For the full carousel workflow, including manual grouping, see [Carousel grouping](/Launch/carousel-grouping).
